@@ -1,0 +1,586 @@
+{
+  "namespace": "betmc_bg",
+  "betmc_ayla_bg_path": {
+    "type": "image",
+    "fill": true,
+    "texture": "('BetMC Custom BG/' + $betmc_klee_image + '_frame')"
+  },
+
+  "betmc_ayla_bg_anim": {
+    "anim_type": "offset",
+    "easing": "linear",
+    "duration": 0.08,
+    "from": "$betmc_ayla_bg_offset",
+    "to": "$betmc_ayla_bg_offset"
+  },
+  
+  "betmc_bg_panel": {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      {
+        "betmc_bg_base@betmc_bg.betmc_bg_base": {}
+      }
+    ]
+  },
+  
+  "betmc_bg_base": {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+    "controls": [
+      {
+        "betmc_bg_stacks": {
+          "type": "stack_panel",
+          "size": [ "100%", "100%" ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": "@betmc_bg.ayla_frame_000",
+          "controls": [
+            {
+              "00@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_0"
+              }
+            },
+            {
+              "01@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_1"
+              }
+            },
+            {
+              "02@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_2"
+              }
+            },
+            {
+              "03@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_3"
+              }
+            },
+            {
+              "04@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_4"
+              }
+            },
+            {
+              "05@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_5"
+              }
+            },
+            {
+              "06@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_6"
+              }
+            },
+            {
+              "07@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_7"
+              }
+            },
+            {
+              "08@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_8"
+              }
+            },
+            {
+              "09@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_9"
+              }
+            },
+            {
+              "10@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_10"
+              }
+            },
+            {
+              "11@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_11"
+              }
+            },
+            {
+              "12@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_12"
+              }
+            },
+            {
+              "13@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_13"
+              }
+            },
+            {
+              "14@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_14"
+              }
+            },
+            {
+              "15@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_15"
+              }
+            },
+            {
+              "16@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_16"
+              }
+            },
+            {
+              "17@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_17"
+              }
+            },
+            {
+              "18@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_18"
+              }
+            },
+            {
+              "19@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_19"
+              }
+            },
+            {
+              "20@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_20"
+              }
+            },
+            {
+              "21@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_21"
+              }
+            },
+            {
+              "22@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_22"
+              }
+            },
+            {
+              "23@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_23"
+              }
+            },
+            {
+              "24@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_24"
+              }
+            },
+            {
+              "25@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_25"
+              }
+            },
+            {
+              "26@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_26"
+              }
+            },
+            {
+              "27@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_27"
+              }
+            },
+            {
+              "28@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_28"
+              }
+            },
+            {
+              "29@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_29"
+              }
+            },
+            {
+              "30@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_30"
+              }
+            },
+            {
+              "31@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_31"
+              }
+            },
+            {
+              "32@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_32"
+              }
+            },
+            {
+              "33@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_33"
+              }
+            },
+            {
+              "34@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_34"
+              }
+            },
+            {
+              "35@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_35"
+              }
+            },
+            {
+              "36@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_36"
+              }
+            },
+            {
+              "37@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_37"
+              }
+            },
+            {
+              "38@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_38"
+              }
+            },
+            {
+              "39@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_39"
+              }
+            },
+            {
+              "40@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_40"
+              }
+            },
+            {
+              "41@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_41"
+              }
+            },
+            {
+              "42@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_42"
+              }
+            },
+            {
+              "43@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_43"
+              }
+            },
+            {
+              "44@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_44"
+              }
+            },
+            {
+              "45@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_45"
+              }
+            },
+            {
+              "46@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_46"
+              }
+            },
+            {
+              "47@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_47"
+              }
+            },
+            {
+              "48@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_48"
+              }
+            },
+            {
+              "49@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_49"
+              }
+            },
+            {
+              "50@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_50"
+              }
+            },
+            {
+              "51@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_51"
+              }
+            },
+            {
+              "52@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_52"
+              }
+            },
+            {
+              "53@betmc_bg.betmc_ayla_bg_path": {
+                "$betmc_klee_image": "IMG_53"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "ayla_frame_000@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "0%" ],
+    "next": "@betmc_bg.ayla_frame_001"
+  },
+  
+  "ayla_frame_001@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-100%" ],
+    "next": "@betmc_bg.ayla_frame_002"
+  },
+  
+  "ayla_frame_002@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-200%" ],
+    "next": "@betmc_bg.ayla_frame_003"
+  },
+  
+  "ayla_frame_003@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-300%" ],
+    "next": "@betmc_bg.ayla_frame_004"
+  },
+  
+  "ayla_frame_004@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-400%" ],
+    "next": "@betmc_bg.ayla_frame_005"
+  },
+  
+  "ayla_frame_005@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-500%" ],
+    "next": "@betmc_bg.ayla_frame_006"
+  },
+  
+  "ayla_frame_006@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-600%" ],
+    "next": "@betmc_bg.ayla_frame_007"
+  },
+  
+  "ayla_frame_007@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-700%" ],
+    "next": "@betmc_bg.ayla_frame_008"
+  },
+  
+  "ayla_frame_008@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-800%" ],
+    "next": "@betmc_bg.ayla_frame_009"
+  },
+  
+  "ayla_frame_009@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-900%" ],
+    "next": "@betmc_bg.ayla_frame_010"
+  },
+  
+  "ayla_frame_010@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-1000%" ],
+    "next": "@betmc_bg.ayla_frame_011"
+  },
+  
+  "ayla_frame_011@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-1100%" ],
+    "next": "@betmc_bg.ayla_frame_012"
+  },
+  
+  "ayla_frame_012@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-1200%" ],
+    "next": "@betmc_bg.ayla_frame_013"
+  },
+  
+  "ayla_frame_013@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-1300%" ],
+    "next": "@betmc_bg.ayla_frame_014"
+  },
+  
+  "ayla_frame_014@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-1400%" ],
+    "next": "@betmc_bg.ayla_frame_015"
+  },
+  
+  "ayla_frame_015@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-1500%" ],
+    "next": "@betmc_bg.ayla_frame_016"
+  },
+  
+  "ayla_frame_016@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-1600%" ],
+    "next": "@betmc_bg.ayla_frame_017"
+  },
+  
+  "ayla_frame_017@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-1700%" ],
+    "next": "@betmc_bg.ayla_frame_018"
+  },
+  
+  "ayla_frame_018@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-1800%" ],
+    "next": "@betmc_bg.ayla_frame_019"
+  },
+  
+  "ayla_frame_019@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-1900%" ],
+    "next": "@betmc_bg.ayla_frame_020"
+  },
+  
+  "ayla_frame_020@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-2000%" ],
+    "next": "@betmc_bg.ayla_frame_021"
+  },
+  
+  "ayla_frame_021@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-2100%" ],
+    "next": "@betmc_bg.ayla_frame_022"
+  },
+  
+  "ayla_frame_022@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-2200%" ],
+    "next": "@betmc_bg.ayla_frame_023"
+  },
+  
+  "ayla_frame_023@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-2300%" ],
+    "next": "@betmc_bg.ayla_frame_024"
+  },
+  
+  "ayla_frame_024@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-2400%" ],
+    "next": "@betmc_bg.ayla_frame_025"
+  },
+  
+  "ayla_frame_025@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-2500%" ],
+    "next": "@betmc_bg.ayla_frame_026"
+  },
+  
+  "ayla_frame_026@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-2600%" ],
+    "next": "@betmc_bg.ayla_frame_027"
+  },
+  
+  "ayla_frame_027@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-2700%" ],
+    "next": "@betmc_bg.ayla_frame_028"
+  },
+  
+  "ayla_frame_028@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-2800%" ],
+    "next": "@betmc_bg.ayla_frame_029"
+  },
+  
+  "ayla_frame_029@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-2900%" ],
+    "next": "@betmc_bg.ayla_frame_030"
+  },
+  
+  "ayla_frame_030@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-3000%" ],
+    "next": "@betmc_bg.ayla_frame_031"
+  },
+  
+  "ayla_frame_031@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-3100%" ],
+    "next": "@betmc_bg.ayla_frame_032"
+  },
+  
+  "ayla_frame_032@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-3200%" ],
+    "next": "@betmc_bg.ayla_frame_033"
+  },
+  
+  "ayla_frame_033@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-3300%" ],
+    "next": "@betmc_bg.ayla_frame_034"
+  },
+  
+  "ayla_frame_034@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-3400%" ],
+    "next": "@betmc_bg.ayla_frame_035"
+  },
+  
+  "ayla_frame_035@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-3500%" ],
+    "next": "@betmc_bg.ayla_frame_036"
+  },
+  
+  "ayla_frame_036@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-3600%" ],
+    "next": "@betmc_bg.ayla_frame_037"
+  },
+  
+  "ayla_frame_037@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-3700%" ],
+    "next": "@betmc_bg.ayla_frame_038"
+  },
+  
+  "ayla_frame_038@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-3800%" ],
+    "next": "@betmc_bg.ayla_frame_039"
+  },
+  
+  "ayla_frame_039@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-3900%" ],
+    "next": "@betmc_bg.ayla_frame_040"
+  },
+  
+  "ayla_frame_040@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-4000%" ],
+    "next": "@betmc_bg.ayla_frame_041"
+  },
+  
+  "ayla_frame_041@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-4100%" ],
+    "next": "@betmc_bg.ayla_frame_042"
+  },
+  
+  "ayla_frame_042@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-4200%" ],
+    "next": "@betmc_bg.ayla_frame_043"
+  },
+  
+  "ayla_frame_043@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-4300%" ],
+    "next": "@betmc_bg.ayla_frame_044"
+  },
+  
+  "ayla_frame_044@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-4400%" ],
+    "next": "@betmc_bg.ayla_frame_045"
+  },
+  
+  "ayla_frame_045@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-4500%" ],
+    "next": "@betmc_bg.ayla_frame_046"
+  },
+  
+  "ayla_frame_046@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-4600%" ],
+    "next": "@betmc_bg.ayla_frame_047"
+  },
+  
+  "ayla_frame_047@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-4700%" ],
+    "next": "@betmc_bg.ayla_frame_048"
+  },
+  
+  "ayla_frame_048@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-4800%" ],
+    "next": "@betmc_bg.ayla_frame_049"
+  },
+  
+  "ayla_frame_049@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-4900%" ],
+    "next": "@betmc_bg.ayla_frame_050"
+  },
+  
+  "ayla_frame_050@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-5000%" ],
+    "next": "@betmc_bg.ayla_frame_051"
+  },
+  
+  "ayla_frame_051@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-5100%" ],
+    "next": "@betmc_bg.ayla_frame_052"
+  },
+  
+  "ayla_frame_052@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-5200%" ],
+    "next": "@betmc_bg.ayla_frame_053"
+  },
+  
+  "ayla_frame_053@betmc_bg.betmc_ayla_bg_anim": {
+    "$betmc_ayla_bg_offset": [ 0, "-5300%" ],
+    "next": "@betmc_bg.ayla_frame_000"
+  }
+}

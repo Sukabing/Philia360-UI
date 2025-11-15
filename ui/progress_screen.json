@@ -1,0 +1,15 @@
+{
+  "namespace": "progress",
+  "world_loading_progress_screen": {
+    "$screen_bg_content": "betmc_bg.betmc_bg_panel",
+    "$screen_content": "progress.world_convert_modal_progress_screen_content"
+  },
+  "world_saving_progress_screen": {
+    "$screen_content": "progress.world_save_modal_progress_screen_content",
+    "$screen_bg_content": "betmc_bg.betmc_bg_panel"
+  },
+  "world_convert_modal_progress_screen": {
+    "$screen_content": "progress.world_convert_modal_progress_screen_content",
+    "$screen_bg_content": "betmc_bg.betmc_bg_panel"
+  }
+}
