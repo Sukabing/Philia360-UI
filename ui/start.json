@@ -11,59 +11,67 @@
 ]},
 
 //定义main_button 
-"icon": {
+"icon0": {
   "type": "image",
   "texture": "textures/ui/bbg.png",
   "layer": 3,
   "size": [15,15],
   "alpha": "$icon_alpha",
-  "$icon_alpha|default": 1
+  "$icon_alpha|default": 0
 },
 "main_button@common_buttons.light_text_button":{},
 
-//Buttons
+//神秘大按键
 "play@main_button":{
-"anchor_from":"bottom_right",
-"anchor_to":"bottom_right",
+"anchor_from":"center",
+"anchor_to":"center",
 "offset":[0,0],
-"$border_visible":true,
-"size":[60,15],
-"layer":10,
-"$button_image":"start.icon",
+"$border_visible":false,// 不显示边框
+"size":["100%","100%"],
+"layer":1,
+"$button_image":"start.icon0",
+"$button_image_fill":true,//将图片拉伸至合适大小 自动填充
 "$pressed_button_name":"button.menu_play",
-"$button_text":"开始"},
+"$button_text":"§0￴￴￴￴￴"},
 
+"icon8@icon0": {
+"$icon_alpha":0.8
+},
+//buttons
 "settings@main_button":{
 "anchor_from":"bottom_right",
 "anchor_to":"bottom_right",
-"offset":[-60,0],
-"$border_visible":true,
-"$button_image":"start.icon",
+"offset":[0,0],
+"$border_visible":false,
+"$button_image":"start.icon8",
+"$button_image_fill":true,
 "size":[60,15],
 "layer":10,
 "$pressed_button_name":"button.menu_settings",
-"$button_text":"设置"},
+"$button_text":"§0设置"},
 
 "store@main_button":{
 "anchor_from":"bottom_right",
 "anchor_to":"bottom_right",
-"offset":[-120,0],
-"$border_visible":true,
+"offset":[-60,0],
+"$border_visible":false,
 "size":[60,15],
 "layer":10,
-"$button_image":"start.icon",
+"$button_image":"start.icon8",
+"$button_image_fill":true,
 "$pressed_button_name":"button.menu_store",
-"$button_text":"商店"},
+"$button_text":"§0商店"},
 
 "achievements@main_button":{
 "anchor_from":"bottom_right",
 "anchor_to":"bottom_right",
-"offset":[-180,0],
-"$border_visible":true,
+"offset":[-120,0],
+"$border_visible":false,
 "size":[60,15],
 "layer":10,
-"$button_image":"start.icon",
+"$button_image":"start.icon8",
+"$button_image_fill":true,
 "$pressed_button_name":"button.menu_achievements",
-"$button_text":"成就"},
+"$button_text":"§0成就"},
 
 "fs":{}}

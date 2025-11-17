@@ -6084,43 +6084,43 @@
     "sounds": [
       {
         "name": "sounds/ba/music1",
-        "stream": true,
+        "stream": false,
         "volume": 0.3,
         "load_on_low_memory": true
       },
       {
         "name": "sounds/ba/music2",
-        "stream": true,
+        "stream": false,
         "volume": 0.3,
         "load_on_low_memory": true
       },
       {
         "name": "sound/ba/music3",
-        "stream": true,
+        "stream": false,
         "volume": 0.3,
         "load_on_low_memory": true
       },
       {
         "name": "sound/ba/music4",
-        "stream": true,
+        "stream": false,
         "volume": 0.3,
         "load_on_low_memory": true
       },
       {
         "name": "sound/ba/music5",
-        "stream": true,
+        "stream": false,
         "volume": 0.3,
         "load_on_low_memory": true
       },
       {
         "name": "sound/ba/music6",
-        "stream": true,
+        "stream": false,
         "volume": 0.3,
         "load_on_low_memory": true
       },
       {
         "name": "sounds/ba/music7",
-        "stream": true,
+        "stream": false,
         "volume": 0.3,
         "load_on_low_memory": true
       }
