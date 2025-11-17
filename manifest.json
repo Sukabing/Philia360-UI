@@ -1,21 +1,21 @@
 {
-"format_version": 2,
-"header": {
-"description": "§d我要给她完整的一生！",
-"name": "§l§d昔涟§e动态平面背景图1.0.1",
-"uuid": "66c6e9a8-3093-462a-9c36-dbb053665838",
-"version": [ 1, 0, 0 ],
-"min_engine_version": [ 1, 21, 0 ]
-},
-"modules": [
-{
-"description": "§d我要给她完整的一生！",
-"type": "resources",
-"uuid": "743f6949-53be-44b6-b326-398225023519",
-"version": [ 0, 0, 0 ]
-}
-],
-"subpacks": [
+  "format_version": 2,
+  "header": {
+    "description": "§d我要给她完整的一生！",
+    "name": "§l§d昔涟§e动态平面背景图1.0.2",
+    "uuid": "66c6e9a8-3093-462a-9c36-dbb053665838",
+    "version": [1, 0, 2],
+    "min_engine_version": [1, 21, 0]
+  },
+  "modules": [
+    {
+      "description": "§d我要给她完整的一生！",
+      "type": "resources",
+      "uuid": "743f6949-53be-44b6-b326-398225023519",
+      "version": [0, 0, 0]
+    }
+  ],
+  "subpacks": [
     {
       "folder_name": "1",
       "name": "覆盖",

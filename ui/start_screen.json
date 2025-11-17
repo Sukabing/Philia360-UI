@@ -7,7 +7,7 @@
       "@common.screen_entrance_animation_push_fade",
       "@common.screen_entrance_animation_pop_fade"
     ],
-    "$screen_content": "start.start_screen_content",
+    "$screen_content": "start.content",
     "$screen_bg_content": "betmc_bg.betmc_bg_panel"
   }
 }
