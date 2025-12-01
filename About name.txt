@@ -1,0 +1,19 @@
+UI材质文件:
+bbg:button background 即按钮背景
+fh:返回
+kgg:开关关
+kgk:开关开
+topcr:菜单顶部的图片
+
+其他贴图
+totem不死图腾
+steve史蒂夫头颅
+
+start.json(命名空间为start)
+start.play 游玩
+start.settings 设置
+start.store 市场
+start.achievements 成就
+start.textscr 显示的文字 即点进击进入游戏
+start.profile_screen 更衣室
+start.fh返回

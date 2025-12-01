@@ -1,0 +1,7 @@
+{
+  "namespace": "tabbed_upsell",
+  "tabbed_upsell_screen@common.base_screen": {
+    "$screen_bg_content": "betmc_bg.betmc_bg_panel",
+    "$screen_content": "menu.content"
+  }
+}
