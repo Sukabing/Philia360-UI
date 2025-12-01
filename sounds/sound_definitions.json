@@ -6083,43 +6083,43 @@
     "category": "music",
     "sounds": [
       {
-        "name": "sounds/ba/music1",
+        "name": "sounds/philia/music1",
         "stream": false,
         "volume": 0.3,
         "load_on_low_memory": true
       },
       {
-        "name": "sounds/ba/music2",
+        "name": "sounds/philia/music2",
         "stream": false,
         "volume": 0.3,
         "load_on_low_memory": true
       },
       {
-        "name": "sound/ba/music3",
+        "name": "sound/philia/music3",
         "stream": false,
         "volume": 0.3,
         "load_on_low_memory": true
       },
       {
-        "name": "sound/ba/music4",
+        "name": "sound/philia/music4",
         "stream": false,
         "volume": 0.3,
         "load_on_low_memory": true
       },
       {
-        "name": "sound/ba/music5",
+        "name": "sound/philia/music5",
         "stream": false,
         "volume": 0.3,
         "load_on_low_memory": true
       },
       {
-        "name": "sound/ba/music6",
+        "name": "sound/philia/music6",
         "stream": false,
         "volume": 0.3,
         "load_on_low_memory": true
       },
       {
-        "name": "sounds/ba/music7",
+        "name": "sounds/philia/music7",
         "stream": false,
         "volume": 0.3,
         "load_on_low_memory": true

@@ -14,7 +14,10 @@
   },
   "betmc_bg_panel": {
     "type": "panel",
-    "size": ["100%", "100%"],
+    "size": [
+      "100%",
+      "100%"
+    ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
     "controls": [
@@ -25,12 +28,18 @@
   },
   "betmc_bg_base": {
     "type": "panel",
-    "size": ["100%", "100%"],
+    "size": [
+      "100%",
+      "100%"
+    ],
     "controls": [
       {
         "betmc_bg_stacks": {
           "type": "stack_panel",
-          "size": ["100%", "100%"],
+          "size": [
+            "100%",
+            "100%"
+          ],
           "anchor_from": "top_left",
           "anchor_to": "top_left",
           "offset": "@betmc_bg.ayla_frame_000",
@@ -596,447 +605,780 @@
     ]
   },
   "ayla_frame_000@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-0%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-0%"
+    ],
     "next": "@betmc_bg.ayla_frame_001"
   },
   "ayla_frame_001@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-100%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-100%"
+    ],
     "next": "@betmc_bg.ayla_frame_002"
   },
   "ayla_frame_002@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-200%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-200%"
+    ],
     "next": "@betmc_bg.ayla_frame_003"
   },
   "ayla_frame_003@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-300%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-300%"
+    ],
     "next": "@betmc_bg.ayla_frame_004"
   },
   "ayla_frame_004@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-400%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-400%"
+    ],
     "next": "@betmc_bg.ayla_frame_005"
   },
   "ayla_frame_005@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-500%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-500%"
+    ],
     "next": "@betmc_bg.ayla_frame_006"
   },
   "ayla_frame_006@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-600%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-600%"
+    ],
     "next": "@betmc_bg.ayla_frame_007"
   },
   "ayla_frame_007@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-700%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-700%"
+    ],
     "next": "@betmc_bg.ayla_frame_008"
   },
   "ayla_frame_008@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-800%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-800%"
+    ],
     "next": "@betmc_bg.ayla_frame_009"
   },
   "ayla_frame_009@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-900%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-900%"
+    ],
     "next": "@betmc_bg.ayla_frame_010"
   },
   "ayla_frame_010@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-1000%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-1000%"
+    ],
     "next": "@betmc_bg.ayla_frame_011"
   },
   "ayla_frame_011@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-1100%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-1100%"
+    ],
     "next": "@betmc_bg.ayla_frame_012"
   },
   "ayla_frame_012@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-1200%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-1200%"
+    ],
     "next": "@betmc_bg.ayla_frame_013"
   },
   "ayla_frame_013@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-1300%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-1300%"
+    ],
     "next": "@betmc_bg.ayla_frame_014"
   },
   "ayla_frame_014@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-1400%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-1400%"
+    ],
     "next": "@betmc_bg.ayla_frame_015"
   },
   "ayla_frame_015@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-1500%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-1500%"
+    ],
     "next": "@betmc_bg.ayla_frame_016"
   },
   "ayla_frame_016@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-1600%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-1600%"
+    ],
     "next": "@betmc_bg.ayla_frame_017"
   },
   "ayla_frame_017@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-1700%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-1700%"
+    ],
     "next": "@betmc_bg.ayla_frame_018"
   },
   "ayla_frame_018@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-1800%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-1800%"
+    ],
     "next": "@betmc_bg.ayla_frame_019"
   },
   "ayla_frame_019@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-1900%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-1900%"
+    ],
     "next": "@betmc_bg.ayla_frame_020"
   },
   "ayla_frame_020@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-2000%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-2000%"
+    ],
     "next": "@betmc_bg.ayla_frame_021"
   },
   "ayla_frame_021@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-2100%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-2100%"
+    ],
     "next": "@betmc_bg.ayla_frame_022"
   },
   "ayla_frame_022@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-2200%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-2200%"
+    ],
     "next": "@betmc_bg.ayla_frame_023"
   },
   "ayla_frame_023@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-2300%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-2300%"
+    ],
     "next": "@betmc_bg.ayla_frame_024"
   },
   "ayla_frame_024@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-2400%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-2400%"
+    ],
     "next": "@betmc_bg.ayla_frame_025"
   },
   "ayla_frame_025@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-2500%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-2500%"
+    ],
     "next": "@betmc_bg.ayla_frame_026"
   },
   "ayla_frame_026@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-2600%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-2600%"
+    ],
     "next": "@betmc_bg.ayla_frame_027"
   },
   "ayla_frame_027@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-2700%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-2700%"
+    ],
     "next": "@betmc_bg.ayla_frame_028"
   },
   "ayla_frame_028@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-2800%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-2800%"
+    ],
     "next": "@betmc_bg.ayla_frame_029"
   },
   "ayla_frame_029@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-2900%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-2900%"
+    ],
     "next": "@betmc_bg.ayla_frame_030"
   },
   "ayla_frame_030@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-3000%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-3000%"
+    ],
     "next": "@betmc_bg.ayla_frame_031"
   },
   "ayla_frame_031@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-3100%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-3100%"
+    ],
     "next": "@betmc_bg.ayla_frame_032"
   },
   "ayla_frame_032@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-3200%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-3200%"
+    ],
     "next": "@betmc_bg.ayla_frame_033"
   },
   "ayla_frame_033@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-3300%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-3300%"
+    ],
     "next": "@betmc_bg.ayla_frame_034"
   },
   "ayla_frame_034@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-3400%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-3400%"
+    ],
     "next": "@betmc_bg.ayla_frame_035"
   },
   "ayla_frame_035@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-3500%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-3500%"
+    ],
     "next": "@betmc_bg.ayla_frame_036"
   },
   "ayla_frame_036@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-3600%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-3600%"
+    ],
     "next": "@betmc_bg.ayla_frame_037"
   },
   "ayla_frame_037@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-3700%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-3700%"
+    ],
     "next": "@betmc_bg.ayla_frame_038"
   },
   "ayla_frame_038@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-3800%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-3800%"
+    ],
     "next": "@betmc_bg.ayla_frame_039"
   },
   "ayla_frame_039@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-3900%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-3900%"
+    ],
     "next": "@betmc_bg.ayla_frame_040"
   },
   "ayla_frame_040@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-4000%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-4000%"
+    ],
     "next": "@betmc_bg.ayla_frame_041"
   },
   "ayla_frame_041@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-4100%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-4100%"
+    ],
     "next": "@betmc_bg.ayla_frame_042"
   },
   "ayla_frame_042@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-4200%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-4200%"
+    ],
     "next": "@betmc_bg.ayla_frame_043"
   },
   "ayla_frame_043@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-4300%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-4300%"
+    ],
     "next": "@betmc_bg.ayla_frame_044"
   },
   "ayla_frame_044@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-4400%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-4400%"
+    ],
     "next": "@betmc_bg.ayla_frame_045"
   },
   "ayla_frame_045@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-4500%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-4500%"
+    ],
     "next": "@betmc_bg.ayla_frame_046"
   },
   "ayla_frame_046@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-4600%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-4600%"
+    ],
     "next": "@betmc_bg.ayla_frame_047"
   },
   "ayla_frame_047@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-4700%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-4700%"
+    ],
     "next": "@betmc_bg.ayla_frame_048"
   },
   "ayla_frame_048@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-4800%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-4800%"
+    ],
     "next": "@betmc_bg.ayla_frame_049"
   },
   "ayla_frame_049@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-4900%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-4900%"
+    ],
     "next": "@betmc_bg.ayla_frame_050"
   },
   "ayla_frame_050@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-5000%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-5000%"
+    ],
     "next": "@betmc_bg.ayla_frame_051"
   },
   "ayla_frame_051@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-5100%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-5100%"
+    ],
     "next": "@betmc_bg.ayla_frame_052"
   },
   "ayla_frame_052@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-5200%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-5200%"
+    ],
     "next": "@betmc_bg.ayla_frame_053"
   },
   "ayla_frame_053@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-5300%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-5300%"
+    ],
     "next": "@betmc_bg.ayla_frame_054"
   },
   "ayla_frame_054@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-5400%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-5400%"
+    ],
     "next": "@betmc_bg.ayla_frame_055"
   },
   "ayla_frame_055@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-5500%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-5500%"
+    ],
     "next": "@betmc_bg.ayla_frame_056"
   },
   "ayla_frame_056@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-5600%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-5600%"
+    ],
     "next": "@betmc_bg.ayla_frame_057"
   },
   "ayla_frame_057@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-5700%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-5700%"
+    ],
     "next": "@betmc_bg.ayla_frame_058"
   },
   "ayla_frame_058@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-5800%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-5800%"
+    ],
     "next": "@betmc_bg.ayla_frame_059"
   },
   "ayla_frame_059@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-5900%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-5900%"
+    ],
     "next": "@betmc_bg.ayla_frame_060"
   },
   "ayla_frame_060@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-6000%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-6000%"
+    ],
     "next": "@betmc_bg.ayla_frame_061"
   },
   "ayla_frame_061@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-6100%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-6100%"
+    ],
     "next": "@betmc_bg.ayla_frame_062"
   },
   "ayla_frame_062@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-6200%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-6200%"
+    ],
     "next": "@betmc_bg.ayla_frame_063"
   },
   "ayla_frame_063@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-6300%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-6300%"
+    ],
     "next": "@betmc_bg.ayla_frame_064"
   },
   "ayla_frame_064@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-6400%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-6400%"
+    ],
     "next": "@betmc_bg.ayla_frame_065"
   },
   "ayla_frame_065@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-6500%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-6500%"
+    ],
     "next": "@betmc_bg.ayla_frame_066"
   },
   "ayla_frame_066@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-6600%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-6600%"
+    ],
     "next": "@betmc_bg.ayla_frame_067"
   },
   "ayla_frame_067@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-6700%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-6700%"
+    ],
     "next": "@betmc_bg.ayla_frame_068"
   },
   "ayla_frame_068@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-6800%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-6800%"
+    ],
     "next": "@betmc_bg.ayla_frame_069"
   },
   "ayla_frame_069@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-6900%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-6900%"
+    ],
     "next": "@betmc_bg.ayla_frame_070"
   },
   "ayla_frame_070@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-7000%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-7000%"
+    ],
     "next": "@betmc_bg.ayla_frame_071"
   },
   "ayla_frame_071@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-7100%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-7100%"
+    ],
     "next": "@betmc_bg.ayla_frame_072"
   },
   "ayla_frame_072@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-7200%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-7200%"
+    ],
     "next": "@betmc_bg.ayla_frame_073"
   },
   "ayla_frame_073@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-7300%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-7300%"
+    ],
     "next": "@betmc_bg.ayla_frame_074"
   },
   "ayla_frame_074@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-7400%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-7400%"
+    ],
     "next": "@betmc_bg.ayla_frame_075"
   },
   "ayla_frame_075@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-7500%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-7500%"
+    ],
     "next": "@betmc_bg.ayla_frame_076"
   },
   "ayla_frame_076@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-7600%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-7600%"
+    ],
     "next": "@betmc_bg.ayla_frame_077"
   },
   "ayla_frame_077@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-7700%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-7700%"
+    ],
     "next": "@betmc_bg.ayla_frame_078"
   },
   "ayla_frame_078@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-7800%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-7800%"
+    ],
     "next": "@betmc_bg.ayla_frame_079"
   },
   "ayla_frame_079@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-7900%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-7900%"
+    ],
     "next": "@betmc_bg.ayla_frame_080"
   },
   "ayla_frame_080@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-8000%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-8000%"
+    ],
     "next": "@betmc_bg.ayla_frame_081"
   },
   "ayla_frame_081@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-8100%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-8100%"
+    ],
     "next": "@betmc_bg.ayla_frame_082"
   },
   "ayla_frame_082@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-8200%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-8200%"
+    ],
     "next": "@betmc_bg.ayla_frame_083"
   },
   "ayla_frame_083@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-8300%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-8300%"
+    ],
     "next": "@betmc_bg.ayla_frame_084"
   },
   "ayla_frame_084@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-8400%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-8400%"
+    ],
     "next": "@betmc_bg.ayla_frame_085"
   },
   "ayla_frame_085@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-8500%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-8500%"
+    ],
     "next": "@betmc_bg.ayla_frame_086"
   },
   "ayla_frame_086@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-8600%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-8600%"
+    ],
     "next": "@betmc_bg.ayla_frame_087"
   },
   "ayla_frame_087@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-8700%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-8700%"
+    ],
     "next": "@betmc_bg.ayla_frame_088"
   },
   "ayla_frame_088@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-8800%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-8800%"
+    ],
     "next": "@betmc_bg.ayla_frame_089"
   },
   "ayla_frame_089@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-8900%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-8900%"
+    ],
     "next": "@betmc_bg.ayla_frame_090"
   },
   "ayla_frame_090@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-9000%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-9000%"
+    ],
     "next": "@betmc_bg.ayla_frame_091"
   },
   "ayla_frame_091@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-9100%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-9100%"
+    ],
     "next": "@betmc_bg.ayla_frame_092"
   },
   "ayla_frame_092@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-9200%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-9200%"
+    ],
     "next": "@betmc_bg.ayla_frame_093"
   },
   "ayla_frame_093@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-9300%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-9300%"
+    ],
     "next": "@betmc_bg.ayla_frame_094"
   },
   "ayla_frame_094@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-9400%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-9400%"
+    ],
     "next": "@betmc_bg.ayla_frame_095"
   },
   "ayla_frame_095@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-9500%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-9500%"
+    ],
     "next": "@betmc_bg.ayla_frame_096"
   },
   "ayla_frame_096@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-9600%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-9600%"
+    ],
     "next": "@betmc_bg.ayla_frame_097"
   },
   "ayla_frame_097@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-9700%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-9700%"
+    ],
     "next": "@betmc_bg.ayla_frame_098"
   },
   "ayla_frame_098@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-9800%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-9800%"
+    ],
     "next": "@betmc_bg.ayla_frame_099"
   },
   "ayla_frame_099@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-9900%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-9900%"
+    ],
     "next": "@betmc_bg.ayla_frame_100"
   },
   "ayla_frame_100@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-10000%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-10000%"
+    ],
     "next": "@betmc_bg.ayla_frame_101"
   },
   "ayla_frame_101@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-10100%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-10100%"
+    ],
     "next": "@betmc_bg.ayla_frame_102"
   },
   "ayla_frame_102@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-10200%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-10200%"
+    ],
     "next": "@betmc_bg.ayla_frame_103"
   },
   "ayla_frame_103@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-10300%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-10300%"
+    ],
     "next": "@betmc_bg.ayla_frame_104"
   },
   "ayla_frame_104@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-10400%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-10400%"
+    ],
     "next": "@betmc_bg.ayla_frame_105"
   },
   "ayla_frame_105@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-10500%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-10500%"
+    ],
     "next": "@betmc_bg.ayla_frame_106"
   },
   "ayla_frame_106@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-10600%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-10600%"
+    ],
     "next": "@betmc_bg.ayla_frame_107"
   },
   "ayla_frame_107@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-10700%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-10700%"
+    ],
     "next": "@betmc_bg.ayla_frame_108"
   },
   "ayla_frame_108@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-10800%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-10800%"
+    ],
     "next": "@betmc_bg.ayla_frame_109"
   },
   "ayla_frame_109@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-10900%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-10900%"
+    ],
     "next": "@betmc_bg.ayla_frame_110"
   },
   "ayla_frame_110@betmc_bg.betmc_ayla_bg_anim": {
-    "$betmc_ayla_bg_offset": [0, "-11000%"],
+    "$betmc_ayla_bg_offset": [
+      0,
+      "-11000%"
+    ],
     "next": "@betmc_bg.ayla_frame_000"
   }
 }

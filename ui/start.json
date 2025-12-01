@@ -7,7 +7,10 @@
 {"@start.play":{}},
 {"@start.settings":{}},
 {"@start.store":{}},
-{"@start.achievements":{}}
+{"@start.achievements":{}},
+{"@start.textscr":{}},
+{"@start.profile_screen":{}},
+{"@start.fh":{}}
 ]},
 
 //定义main_button 
@@ -15,10 +18,21 @@
   "type": "image",
   "texture": "textures/ui/bbg.png",
   "layer": 3,
+  "fill":true,
   "size": [15,15],
   "alpha": "$icon_alpha",
   "$icon_alpha|default": 0
-},
+},//菜单按键
+
+"fht": {
+  "type": "image",
+  "texture": "textures/ui/fh.png",
+  "layer": 3,
+  "size": [16,16],
+  "alpha": "$icon_alpha",
+  "$icon_alpha|default": 8
+},//返回按键
+
 "main_button@common_buttons.light_text_button":{},
 
 //神秘大按键
@@ -74,4 +88,39 @@
 "$pressed_button_name":"button.menu_achievements",
 "$button_text":"§0成就"},
 
+"profile_screen@main_button":{
+"anchor_from":"bottom_right",
+"anchor_to":"bottom_right",
+"offset":[-180,0],
+"$border_visible":false,
+"size":[60,15],
+"layer":10,
+"$button_image":"start.icon8",
+"$button_image_fill":true,
+"$pressed_button_name":"button.to_profile_screen",
+"$button_text":"§0更衣室"},
+
+"fh@main_button":{
+"anchor_from":"top_left",
+"anchor_to":"top_left",
+"offset":[0,0],
+"$border_visible":false,
+"size":[32,32],
+"layer":10,
+"$button_image":"start.fht",
+"$button_image_fill":true,
+"$pressed_button_name":"button.menu_buy_game",//button.menu_exit
+"$button_text":"§0  "},//返回按键
+
+
+ "textscr":{
+ "type": "label",
+ "text":"§0点击任意处进入游戏\n§d    Hello world!",
+ "layer":10,
+ "font_type":"rune",
+ "anchor_from": "bottom_middle",
+ "anchor_to": "bottom_middle",
+ "offset":[0,-30],
+  },
+  
 "fs":{}}

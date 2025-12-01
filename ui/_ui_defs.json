@@ -1,6 +1,9 @@
 {
-"ui_defs":[
-"ui/start.json",
-"betmc_bg_code/betmc_2411.json"
-//定义用户界面的初始结构和加载入口。
-]}
+  "ui_defs": [
+    "ui/start.json",
+    "betmc_bg_code/betmc_2411.json",
+    "ui/menu.json",
+    "ui/tabbed_upsell_screen.json"
+    //定义用户界面的初始结构和加载入口。
+  ]
+}
