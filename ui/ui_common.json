@@ -1,0 +1,391 @@
+{
+  "container_item": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          {
+            "ql@common.button_ref": {
+              "$button_id_1": "button.container_auto_place",
+              "$button_id_2": "button.container_take_all_place_all",
+              "$inv_button_mode": "quick_loot"
+            }
+          },
+          {
+            "dra@common.button_ref": {
+              "$button_id_1": "button.drop_all",
+              "$button_id_2": "button.drop_all",
+              "$inv_button_mode": "drop_all_mode"
+            }
+          },
+          {
+            "dro@common.button_ref": {
+              "$button_id_1": "button.drop_one",
+              "$button_id_2": "button.drop_one",
+              "$inv_button_mode": "drop_one_mode"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "button_ref": {
+    "type": "panel",
+    "layer": 10,
+    "$button_ref_|default": "common.custom_container_slot_button_prototype",
+    "controls": [
+      {
+        "container_slot_button_prototype@$button_ref_": {
+          "tts_ignore_count": true,
+          "tts_skip_message": true,
+          "tts_inherit_siblings": true
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "$inv_button_mode",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+  "custom_container_slot_button_prototype@common.container_slot_button_prototype": {
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "$button_id_1",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "$button_id_2",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_inventory_drop",
+        "to_button_id": "button.drop_one",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_inventory_drop_all",
+        "to_button_id": "button.drop_all",
+        "mapping_type": "pressed"
+      }
+    ]
+  },
+  "base_screen/loading_bars_background": {
+    "ignored": true
+  },
+  "ql_bg": {
+    "type": "panel",
+    "anchor_from": "$ql_anchor",
+    "anchor_to": "$ql_anchor",
+    "$ql_offset|default": [
+      171,
+      -77
+    ],
+    "controls": [
+      {
+        "ql": {
+          "type": "stack_panel",
+          "controls": [
+            {
+              "df@common.default": {}
+            },
+            {
+              "qlpd": {
+                "type": "panel",
+                "size": [
+                  1,
+                  1
+                ]
+              }
+            },
+            {
+              "quick_loot_toggle@common.quick_loot_toggle": {}
+            },
+            {
+              "qlpd0": {
+                "type": "panel",
+                "size": [
+                  1,
+                  1
+                ]
+              }
+            },
+            {
+              "drpo@common.drop_one": {}
+            },
+            {
+              "qlpd1": {
+                "type": "panel",
+                "size": [
+                  1,
+                  1
+                ]
+              }
+            },
+            {
+              "drp@common.drop_all": {}
+            }
+          ]
+        }
+      }
+    ],
+    "$ql_anchor|default": "left_middle",
+    "offset": "$ql_offset",
+    "size": [
+      "100%c",
+      "100%c"
+    ]
+  },
+  "black_ovr": {
+    "type": "image",
+    "texture": "textures/ui/black_ovr",
+    "alpha": "$alpha",
+    "$alpha|default": 1.0
+  },
+  "destroy_item_panel": {
+    "type": "panel",
+    "size": [
+      28,
+      28
+    ],
+    "anchor_from": "$dt_anchor",
+    "anchor_to": "$dt_anchor",
+    "controls": [
+      {
+        "bg": {
+          "type": "image",
+          "texture": "textures/ui/TabRightFrontBottomMost",
+          "size": "$dt_bg_size"
+        }
+      },
+      {
+        "cell": {
+          "type": "image",
+          "texture": "textures/ui/destroy_item",
+          "size": [
+            18,
+            18
+          ],
+          "offset": "$dt_btn_offset"
+        }
+      },
+      {
+        "destroy@common.button": {
+          "$pressed_button_name": "button.destroy_selection",
+          "size": [
+            18,
+            18
+          ],
+          "default_control": "",
+          "pressed_control": "",
+          "controls": [
+            {
+              "hover@common.empty_panel": {
+                "size": [
+                  "100%",
+                  "100%"
+                ],
+                "controls": [
+                  {
+                    "hover_text": {
+                      "type": "image",
+                      "allow_clipping": false,
+                      "alpha": 1.0,
+                      "texture": "textures/ui/purpleBorder",
+                      "size": [
+                        "100%c+8px",
+                        "100%c+6px"
+                      ],
+                      "anchor_from": "right_middle",
+                      "anchor_to": "right_middle",
+                      "offset": [
+                        "100%x - 8px",
+                        12
+                      ],
+                      "layer": 186,
+                      "controls": [
+                        {
+                          "hover_text_panel": {
+                            "type": "panel",
+                            "size": [
+                              "100%c",
+                              "100%c"
+                            ],
+                            "controls": [
+                              {
+                                "dst_hover_text": {
+                                  "type": "label",
+                                  "layer": 187,
+                                  "color": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                  ],
+                                  "shadow": false,
+                                  "text": "inv.destroy.name"
+                                }
+                              }
+                            ],
+                            "offset": [
+                              -0.5,
+                              -1
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "sound_name": "empty",
+          "offset": "$dt_btn_offset"
+        }
+      }
+    ],
+    "offset": "$dt_offset",
+    "$dt_offset|default": [
+      30,
+      0
+    ],
+    "$dt_anchor|default": "right_middle",
+    "$dt_bg_size|default": [
+      "100%",
+      "100%"
+    ],
+    "$dt_btn_offset|default": [
+      0,
+      0
+    ]
+  },
+  "modes_toggle_base@common_toggles.light_content_toggle": {
+    "$radio_toggle_group": true,
+    "$toggle_name": "inventory_modes",
+    "$toggle_group_default_selected": 0,
+    "$ql_bt_size|default": [
+      20,
+      20
+    ],
+    "$focus_border_size": "$ql_border_size",
+    "size": "$ql_bt_size"
+  },
+  "drop_all@common.modes_toggle_base": {
+    "$toggle_view_binding_name": "drop_all_mode",
+    "$toggle_group_forced_index": 3,
+    "$button_content": "common.drop_all_icon"
+  },
+  "drop_one@common.modes_toggle_base": {
+    "$toggle_view_binding_name": "drop_one_mode",
+    "$toggle_group_forced_index": 2,
+    "$button_content": "common.drop_one_icon"
+  },
+  "default@common.modes_toggle_base": {
+    "$toggle_view_binding_name": "default_mode",
+    "$toggle_group_forced_index": 0,
+    "$toggle_default_state": true,
+    "$button_content": "common.default_icon"
+  },
+  "quick_loot_toggle@common.modes_toggle_base": {
+    "$toggle_view_binding_name": "quick_loot",
+    "$toggle_group_forced_index": 1,
+    "$button_content": "common.quick_loot_icon"
+  },
+  "hotbar_grid_template": {
+    "type": "panel",
+    "size": [
+      162,
+      18
+    ],
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "offset": [
+      0,
+      -5
+    ],
+    "controls": [
+      {
+        "quick_loot_bg@common.ql_bg": {}
+      },
+      {
+        "hotbar_grid_template": {
+          "type": "grid",
+          "size": [
+            162,
+            18
+          ],
+          "grid_dimensions": [
+            9,
+            1
+          ],
+          "grid_item_template": "common.grid_item_for_hotbar",
+          "collection_name": "hotbar_items"
+        }
+      }
+    ]
+  },
+  "default_icon@ql_icons": {
+    "texture": "textures/ui/inventory_icon",
+    "size": [
+      17,
+      17
+    ],
+    "$cthvtxt": "默认"
+  },
+  "drop_all_icon@quick_loot_icon": {
+    "texture": "textures/ui/drop_all_icon",
+    "$cthvtxt": "丢弃全部"
+  },
+  "drop_one_icon@quick_loot_icon": {
+    "texture": "textures/ui/drop_one_icon",
+    "$cthvtxt": "丢弃一个"
+  },
+  "quick_loot_icon@ql_icons": {
+    "texture": "textures/ui/quick_loot_icon",
+    "size": [
+      14,
+      14
+    ],
+    "$cthvtxt": "快速移动"
+  },
+  "ql_icons": {
+    "type": "image",
+    "controls": [
+      {
+        "ct_hover_for_toggle": {
+          "texture": "textures/ui/purpleBorder",
+          "size": [
+            "100%c+8px",
+            "100%c+6px"
+          ],
+          "visible": "($toggle_checked_hover or $toggle_unchecked_hover)",
+          "controls": [
+            {
+              "label": {
+                "text": "$cthvtxt",
+                "type": "label",
+                "color": "white",
+                "layer": 999
+              }
+            }
+          ],
+          "$cthvtxt|default": "",
+          "offset": "$hvofs",
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "$hvofs": [
+            8,
+            8
+          ]
+        }
+      }
+    ]
+  }
+}

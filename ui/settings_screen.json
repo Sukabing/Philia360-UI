@@ -1,6 +1,6 @@
 {
-  "namespace": "settings",
-  "settings_screen_base@settings_common.screen_base": {
-    "$screen_bg_content": "betmc_bg.betmc_bg_panel"
-  }
+    "namespace": "settings",
+    "settings_screen_base@settings_common.screen_base": {
+        "$screen_bg_content": "betmc_bg.betmc_bg_panel"
+    }
 }

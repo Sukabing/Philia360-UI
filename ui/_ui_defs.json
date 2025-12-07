@@ -1,9 +1,13 @@
 {
-  "ui_defs": [
-    "ui/start.json",
-    "betmc_bg_code/betmc_2411.json",
-    "ui/menu.json",
-    "ui/tabbed_upsell_screen.json"
-    //定义用户界面的初始结构和加载入口。
-  ]
-}
+"ui_defs":[
+"ui/start.json",
+"betmc_bg_code/betmc_2411.json",
+"ui/menu.json",
+"ui/tabbed_upsell_screen.json",
+   "ui/.assets/.chat_tweaks",
+    "ui/.assets/.brewing_icons",
+    "ui/.assets/.brewing_guide",
+    "ui/.assets/.gamemode_switcher",
+    "ui/.assets/.pocket_warning"
+//定义用户界面的初始结构和加载入口。
+]}

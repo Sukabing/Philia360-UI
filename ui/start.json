@@ -7,12 +7,348 @@
 {"@start.play":{}},
 {"@start.settings":{}},
 {"@start.store":{}},
-{"@start.achievements":{}},
+{"@start.rlm":{}},
 {"@start.textscr":{}},
 {"@start.profile_screen":{}},
-{"@start.fh":{}}
+{"@start.gmtg_panel":{}}
 ]},
-
+  //开关
+   "ggmkg@common_toggles.light_text_toggle":{
+   "size":[32,32],
+   "$toggle_state_binding_name": "#toggle_state",
+    "$toggle_group_default_selected": 0,
+    "$toggle_name": "toggle_gmtg_1",
+    "$unchecked_control": "start.toggle_uncheck",
+    "$checked_control": "start.toggle_check",
+    "$unchecked_hover_control": "start.toggle_uncheck_hover",
+    "$checked_hover_control": "start.toggle_check_hover",
+    "$toggle_default_state":false
+  },
+"toggle_uncheck@toggle_style":{"$toggle_image":"toggleoff"},
+"toggle_check@toggle_style":{"$toggle_image":"toggleon"},
+"toggle_uncheck_hover@toggle_style":{"$toggle_image":"toggleoffh"},
+"toggle_check_hover@toggle_style":{"$toggle_image":"toggleonh"},
+"toggle_style":{"type":"image","texture":"('textures/ui/.texture_assets/.start_screen_icons/' + $toggle_image)"},
+  //二层面板
+    "stb_mn@start.hsp": {
+    "bindings": [
+    {
+      "binding_type": "view",
+      "source_control_name": "ggmkg",
+      "source_property_name": "#toggle_state",
+      "target_property_name": "#visible"
+    }
+  ],
+    "controls": [
+      {
+        "pdg@start.p": {
+          "size": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "ibx@common_buttons.light_content_button": {
+          "size": [
+            16,
+            16
+          ],
+          "$pressed_button_name": "button.menu_achievements",
+          "$button_content": "start.achv_ix"
+        }
+      },
+      {
+        "pdg1@start.p": {
+          "size": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "achv@common_buttons.light_content_button": {
+          "size": [
+            16,
+            16
+          ],
+          "$pressed_button_name": "button.menu_inbox",
+          "$button_content": "start.inbox_mw"
+        }
+      },
+      {
+        "pdg11@start.p": {
+          "size": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+      "menubn@common_buttons.light_content_button":{
+      "$button_content":"start.menup",
+      "$pressed_button_name":"button.menu_buy_game",
+          "size": [16,16]}
+          },
+      {
+        "pdgw11@start.p": {
+          "size": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "xbl@common_buttons.light_content_button": {
+          "$button_content": "start.xbl_fd",
+          "$pressed_button_name": "button.menu_open_uri",
+          "property_bag": {
+            "#hyperlink": "https://account.xbox.com/Settings"
+          },
+          "bindings": [
+            {
+              "binding_name": "(not #sign_in_visible)",
+              "binding_name_override": "#visible"
+            }
+          ],
+          "size": [
+            16,
+            16
+          ]
+        }
+      },
+      {
+        "xbl@common_buttons.light_content_button": {
+          "$button_content": "start.xbl_si",
+          "$pressed_button_name": "button.signin",
+          "bindings": [
+            {
+              "binding_name": "#sign_in_visible",
+              "binding_name_override": "#visible"
+            }
+          ],
+          "size": [
+            16,
+            16
+          ]
+        }
+      }
+    ],
+    "size": [
+      "100%cm",
+      "100%cm"
+    ],
+    "$ach": "left_middle",
+    "offset": [
+      2,
+      0
+    ]
+  },
+//信息
+"gmtg_panel": {  // 继承自一个基本面板(panel)
+  "type":"panel",
+  "size": [96, 32], // 面板默认大小为96x32像素
+  "anchor_from":"top_left",
+  "anchor_to":"top_left",
+  "offset": [16, 8],  // 偏移：距离屏幕左上角向右16像素，向下8像素
+  "layer":30,
+  "controls":[
+  {"@menu.board":{}},
+  {"gmtgt@ggmkg":{"anchor_from":"center",
+   "anchor_to": "center",
+   "layer":30,
+   "offset": [64,0],
+   "$toggle_view_binding_name": "ggmkg",
+   "$toggle_group_forced_index":0}},
+  {"ywgsghsh@start.stb_mn":{ "offset":[10,26]}},
+        {
+        "sbg2@start.i": {
+          "texture": "textures/ui/gmtg",
+          "alpha": 0.8,
+          "size": [
+            "100%",
+            20
+          ],
+          "$ach": "bottom_middle",
+          "offset": [
+            0,
+            20
+          ],
+            "bindings": [
+    {
+      "binding_type": "view",
+      "source_control_name": "ggmkg",
+      "source_property_name": "#toggle_state",
+      "target_property_name": "#visible"
+    }
+  ]
+        }
+      },
+      {
+        "profbt@common_buttons.light_content_button": {
+          "offset": [
+            3,
+            3
+          ],
+          "size": [
+            26,
+            26
+          ],
+          "$pressed_button_name": "button.menu_profile",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "$default_button_texture": "textures/ui/null",
+          "$hover_button_texture": "textures/ui/null",
+          "$pressed_button_texture": "textures/ui/null"
+        }
+      },
+  {"sbg@start.i":{ // 一个图像控件，作为底层背景
+    "texture": "textures/ui/gmtg",
+    "alpha":1 // 半透明灰色
+  }},
+  {"gtg@start.l":{ // 一个文本标签(Label)
+    "$ach": "top_left",
+    "offset": [ 32, 4 ], // 从头像右侧开始（32px）
+    "bindings": [
+        {
+        "binding_name": "#playername" // 文本内容绑定到数据源"#playername"
+        }
+    ],
+    "text": "#playername" // 显示玩家名
+  }},
+  {
+  "profbt@common_buttons.light_content_button": {
+    "offset": [ 3, 3 ], // 在面板内的位置
+    "size": [ 26, 26 ],
+    "$pressed_button_name": "button.menu_profile", // 点击后触发的事件
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "$default_button_texture": "textures/ui/null", // 纹理设为空，即透明按钮
+    "$hover_button_texture": "textures/ui/null",
+    "$pressed_button_texture": "textures/ui/null"
+  }
+},
+{
+  "line@start.i": {
+    "$ach": "top_left",
+    "offset": [ 32, 16 ], // 位于玩家名下方
+    "texture": "textures/ui/White", // 白色纹理
+    "size": [ 60, 2 ] // 一条60x2的白色细线
+  }
+},
+{
+  "pf_ic@start.p": {
+    "size": [ "100%c", "100%c" ], // 大小由其内容决定
+    "controls": [ // 这个容器内有两个头像控件，通过绑定决定显示哪一个
+      {
+        "gamerpic@start.gamerpic": { // 玩家自定义的Xbox头像
+          "$gamerpic_visible": "#show_gamerpic",
+          "size": [ 24, 24 ]
+        }
+      },
+      {
+        "alex_icon@start.alex_icon": { // 默认角色头像（如Alex）
+          "bindings": [
+            {
+              "binding_name": "(not #show_gamerpic)", // 绑定逻辑：当不显示gamerpic时
+              "binding_name_override": "#visible" // 则显示这个默认头像
+            }
+          ],
+          "size": [ 24, 24 ]
+        }
+      }
+    ],
+    "$ach": "top_left",
+    "offset": [ 4, 4 ] // 位于面板左上角，带4px边距
+  }
+},
+{
+          "tgl@start.l": {
+          "$ach": "right_middle",
+          "text":"§dphilia360 V1.0.5",
+          "offset": [
+            -1,
+            9
+          ],
+          "size": [
+            62,
+            10
+            ]
+  }
+}
+]
+},
+//图片控件
+  "inbox_mw@start.i": {
+    "texture": "textures/ui/.texture_assets/.start_screen_icons/inbox_mw",
+    "controls": [
+      {
+        "hover@common.ct_hover": {
+          "$cthvtxt": "menu.inbox",
+          "$hvofs": [
+            4,
+            21
+          ],
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left"
+        }
+      }
+    ]
+  },
+  "achv_ix@start.i": {
+    "texture": "textures/ui/achievements",
+    "controls": [
+      {
+        "hover@common.ct_hover": {
+          "$hvofs": [
+            4,
+            21
+          ],
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "$cthvtxt": "menu.achievements"
+        }
+      }
+    ]
+  },
+  "menup@start.i": {
+    "texture": "textures/ui/.texture_assets/.start_screen_icons/menu",
+     "anchor_from": "bottom_left",
+     "anchor_to": "bottom_left"
+  },
+  "xbl_fd@start.i": {
+    "texture": "textures/ui/.texture_assets/.start_screen_icons/xb_ma",
+    "controls": [
+      {
+        "hover@common.ct_hover": {
+          "$hvofs": [
+            4,
+            21
+          ],
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "$cthvtxt": "options.manageAccount"
+        }
+      }
+    ]
+  },
+  "xbl_si@start.i": {
+    "texture": "textures/ui/.texture_assets/.start_screen_icons/xb_si",
+    "controls": [
+      {
+        "hover@common.ct_hover": {
+          "$hvofs": [
+            4,
+            21
+          ],
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "$cthvtxt": "xbox.signin"
+        }
+      }
+    ]
+  },
+  //结束
 //定义main_button 
 "icon0": {
   "type": "image",
@@ -76,7 +412,7 @@
 "$pressed_button_name":"button.menu_store",
 "$button_text":"§0商店"},
 
-"achievements@main_button":{
+"rlm@main_button":{
 "anchor_from":"bottom_right",
 "anchor_to":"bottom_right",
 "offset":[-120,0],
@@ -85,8 +421,8 @@
 "layer":10,
 "$button_image":"start.icon8",
 "$button_image_fill":true,
-"$pressed_button_name":"button.menu_achievements",
-"$button_text":"§0成就"},
+"$pressed_button_name":"button.menu_realms",
+"$button_text":"§0领域"},
 
 "profile_screen@main_button":{
 "anchor_from":"bottom_right",
@@ -101,8 +437,8 @@
 "$button_text":"§0更衣室"},
 
 "fh@main_button":{
-"anchor_from":"top_left",
-"anchor_to":"top_left",
+"anchor_from":"top_right",
+"anchor_to":"top_right",
 "offset":[0,0],
 "$border_visible":false,
 "size":[32,32],
@@ -120,7 +456,31 @@
  "font_type":"rune",
  "anchor_from": "bottom_middle",
  "anchor_to": "bottom_middle",
- "offset":[0,-30],
+ "offset":[0,-30]
   },
-  
+//模板
+  "p@achr": {
+    "type": "panel"
+  },
+  "i@achr": {
+    "type": "image"
+  },
+  "l@achr": {
+    "type": "label"
+  },
+  "vsp@achr": {
+    "type": "stack_panel",
+    "orientation": "vertical"
+  },
+  "hsp@achr": {
+    "type": "stack_panel",
+    "orientation": "horizontal"
+  },
+  "achr": {
+    "type": "none",
+    "layer": 30,
+    "anchor_from": "$ach",
+    "anchor_to": "$ach",
+    "$ach|default": "center"
+  },
 "fs":{}}

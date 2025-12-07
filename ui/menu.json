@@ -1,471 +1,342 @@
 {
-  "namespace": "menu",
-  "content": {
-    "type": "panel",
-    "controls": [
-      {
-        "@menu.mb": {}
-      }
-    ]
-  },
-  "mb": {
-    "type": "panel",
-    "size": [
-      350,
-      180
-    ],
-    //长350，宽180
-    "anchor_from": "center",
-    "anchor_to": "center",
-    "controls": [
-      {
-        "@menu.board": {}
-      },
-      {
-        "@menu_button_00": {}
-      },
-      {
-        "@menu_button_01": {}
-      },
-      {
-        "@menu_button_02": {}
-      },
-      {
-        "@menu_button_03": {}
-      },
-      {
-        "@menu_button_04": {}
-      },
-      {
-        "@menu.fh": {}
-      },
-      {
-        "@menu.wz1": {}
-      },
-      {
-        "ttopcr": {
-          "type": "image",
-          "texture": "textures/ui/topcr.png",
-          "fill": true,
-          "size": [
-            "100%",
-            30
-          ],
-          "alpha": 0.5,
-          "anchor_from": "top_middle",
-          "anchor_to": "top_middle"
-        }
-      }
-    ]
-  },
-  "main_button@common_buttons.light_text_button": {},
-  "board": {
+"namespace":"menu",
+
+"content":{
+"type":"panel",
+"alpha": 0,
+"controls":[
+{"@menu.mb":{}},
+{"@menu.menu_button_hide":{}},
+{"@menu.hide_text":{}}
+],
+     "bindings": [
+    {
+      "binding_type": "view",
+      "source_control_name": "hide",
+      "source_property_name": "#toggle_state",
+      "target_property_name": "#propagateAlpha"
+    }
+  ]},
+
+
+"mb":{
+"type":"panel",
+"size": [350,180],//长350，宽180
+"alpha": 0,
+"layer":10,
+"anchor_from": "center",
+"anchor_to": "center",
+"controls":[
+{"@menu.board":{}},
+{"@menu_button_00":{}},
+{"@menu_button_01":{}},
+{"@menu_button_02":{}},
+{"@menu_button_03":{}},
+{"@menu_button_04":{}},
+{"@menu.fh":{}},
+{"@menu.UI_text":{}},
+{"@menu.wz1":{}},
+{
+"ttopcr":{
+ "type": "image",
+    "texture": "textures/ui/topcr.png",
+    "fill":true,
+    "size": ["100%",30],
+    "alpha":0.5,
+    "layer":10,
+     "anchor_from": "top_middle",
+     "anchor_to": "top_middle"
+}
+}
+],
+     "bindings": [
+    {
+      "binding_type": "view",
+      "source_control_name": "hide",
+      "source_property_name": "#toggle_state",
+      "target_property_name": "#propagateAlpha"
+    }
+  ]
+},
+
+"main_button@common_buttons.light_text_button":{},
+
+   "board": {
     "type": "image",
     "texture": "textures/ui/focus_border_white",
     "nineslice_size": 1,
-    "color": "black",
-    "size": [
-      "100%",
-      "100%"
-    ]
-  },
-  "fh@main_button": {
-    "anchor_from": "top_right",
-    "anchor_to": "top_right",
-    "offset": [
-      -5,
-      0
-    ],
-    "$border_visible": false,
-    "size": [
-      30,
-      30
-    ],
-    "layer": 10,
-    "$button_image": "start.icon0",
-    "$button_image_fill": true,
-    "$pressed_button_name": "button.menu_exit",
-    //button.menu_exit
-    "$button_text": "§0back"
-  },
-  //返回按键
-
-  //-!-定义main开关
-  "main_toggle_menu@common_toggles.light_text_toggle": {
-    "size": [
-      100,
-      30
-    ],
-    "$radio_toggle_group": true,
-    "$toggle_group_default_selected": 1,
-    "$toggle_state_binding_name": "#toggle_state",
-    "$toggle_view_binding_name": "toggle_name_1",
-    "$button_text": "1",
-    "$unchecked_control": "menu.toggle_uncheck1",
-    "$checked_control": "menu.toggle_check1",
-    "$unchecked_hover_control": "menu.toggle_uncheck_hover1",
-    "$checked_hover_control": "menu.toggle_check_hover1"
-  },
-  //-!-定义背景
-  "toggle_uncheck1@toggle_style": {
-    "$toggle_image": "toggle_off_menu"
-  },
-  "toggle_check1@toggle_style": {
-    "$toggle_image": "toggle_on_menu"
-  },
-  "toggle_uncheck_hover1@toggle_style": {
-    "$toggle_image": "toggle_hover_menu"
-  },
-  "toggle_check_hover1@toggle_style": {
-    "$toggle_image": "toggle_hover_menu"
-  },
-  "toggle_style": {
-    "type": "panel",
-    "size": [
-      100,
-      30
-    ],
-    "controls": [
-      {
-        "wz_text": {
-          "type": "label",
-          "text": "$menu_text",
-          "anchor_from": "center",
-          "anchor_to": "center",
-          "layer": 10
-        }
+    "color":"black",
+    "size": [ "100%", "100%" ]
       },
-      //显示文字
-      {
-        "toggle_picture": {
-          "type": "image",
-          "texture": "('textures/ui/' + $toggle_image)"
-        }
-      }
-    ]
+      
+"fh@main_button":{
+"anchor_from":"top_right",
+"anchor_to":"top_right",
+"offset":[-5,0],
+"$border_visible":false,
+"size":[30,30],
+"layer":10,
+"$button_image":"start.icon0",
+"$button_image_fill":true,
+"$pressed_button_name":"button.menu_exit",//button.menu_exit
+"$button_text":"§0back"},//返回按键
+
+//透明图片
+"empty_image": {
+  "type": "image",
+  "texture": "textures/ui/empty.png",
+  "size": [64, 64]
   },
-  //-!-定义5个开关 垂直排列
-  "menu_button_00@main_toggle_menu": {
+  //清屏显示文字
+  "hide_text": {
+  "type": "label",
+  "text": "§0点击除面板外区域清屏，再次点击取消",
+  "offset":[0,-5],
+   "anchor_from":"bottom_middle",
+   "anchor_to":"bottom_middle"
+},
+  //左上角UI显示文字
+  "UI_text": {
+  "type": "label",
+  "size": ["100%",30],
+  "text": "§dphilia360 UI面板",
+  "offset":[10,10],
+   "anchor_from":"top_left",
+   "anchor_to":"top_left"
+   },
+   //隐藏控件 清屏
+   "menu_button_hide@common_toggles.light_text_toggle": {
+    "$toggle_view_binding_name": "hide",
+    "layer":-1,
+    "$toggle_state_binding_name": "#toggle_state",
+    "anchor_from":"top_left",
+    "anchor_to":"top_left",
+  "$unchecked_control": "menu.empty_image",
+  "$checked_control": "menu.empty_image",
+  "$unchecked_hover_control": "menu.empty_image",
+  "$checked_hover_control": "menu.empty_image",
+   "$button_text": "  "
+  },
+  
+//-!-定义main开关
+"main_toggle_menu@common_toggles.light_text_toggle": {
+  "size": [100,30],
+  "$radio_toggle_group": true,
+  "$toggle_group_default_selected": 1,
+  "$toggle_state_binding_name": "#toggle_state",
+  "$toggle_view_binding_name": "toggle_name_1",
+  "$button_text": "1",
+  "$unchecked_control": "menu.toggle_uncheck1",
+  "$checked_control": "menu.toggle_check1",
+  "$unchecked_hover_control": "menu.toggle_uncheck_hover1",
+  "$checked_hover_control": "menu.toggle_check_hover1"
+},
+//-!-定义背景
+"toggle_uncheck1@toggle_style":{"$toggle_image":"toggle_off_menu"},
+"toggle_check1@toggle_style":{"$toggle_image":"toggle_on_menu"},
+"toggle_uncheck_hover1@toggle_style":{"$toggle_image":"toggle_hover_menu"},
+"toggle_check_hover1@toggle_style":{"$toggle_image":"toggle_hover_menu"},
+"toggle_style": {
+  "type": "panel",
+  "size": [100,30],
+  "controls": [
+    {
+      "wz_text": {
+        "type": "label",
+        "text": "$menu_text",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "layer":10
+      }
+    },//显示文字
+    {
+      "toggle_picture":{"type":"image","texture":"('textures/ui/' + $toggle_image)"}
+    }
+  ]
+},
+//-!-定义5个开关 垂直排列
+"menu_button_00@main_toggle_menu": {
     "$toggle_view_binding_name": "name_0",
     "$menu_text": "关于UI",
-    "anchor_from": "top_left",
-    "anchor_to": "top_left",
-    "offset": [
-      0,
-      30
-    ],
+    "anchor_from":"top_left",
+    "anchor_to":"top_left",
+    "offset":[0,30],
     "$toggle_group_forced_index": 1
   },
+
   "menu_button_01@main_toggle_menu": {
     "$toggle_view_binding_name": "name_1",
     "$menu_text": "公告",
-    "anchor_from": "top_left",
-    "anchor_to": "top_left",
-    "offset": [
-      0,
-      60
-    ],
+    "anchor_from":"top_left",
+    "anchor_to":"top_left",
+    "offset":[0,60],
     "$toggle_group_forced_index": 2
   },
+
   "menu_button_02@main_toggle_menu": {
     "$toggle_view_binding_name": "name_2",
     "$menu_text": "更新日志",
-    "anchor_from": "top_left",
-    "anchor_to": "top_left",
-    "offset": [
-      0,
-      90
-    ],
+    "anchor_from":"top_left",
+    "anchor_to":"top_left",
+    "offset":[0,90],
     "$toggle_group_forced_index": 3
   },
+
   "menu_button_03@main_toggle_menu": {
     "$toggle_view_binding_name": "name_3",
     "$menu_text": "开发中…",
-    "anchor_from": "top_left",
-    "anchor_to": "top_left",
-    "offset": [
-      0,
-      120
-    ],
+    "anchor_from":"top_left",
+    "anchor_to":"top_left",
+    "offset":[0,120],
     "$toggle_group_forced_index": 4
   },
-  "menu_button_04@main_toggle_menu": {
+      
+   "menu_button_04@main_toggle_menu": {
     "$toggle_view_binding_name": "name_4",
     "$menu_text": "§d来自过去的一封信",
-    "anchor_from": "top_left",
-    "anchor_to": "top_left",
-    "offset": [
-      0,
-      150
-    ],
+    "anchor_from":"top_left",
+    "anchor_to":"top_left",
+    "offset":[0,150],
     "$toggle_group_forced_index": 5
   },
-  //—!—面板文字配置
-  "wz1": {
-    "type": "panel",
-    "size": [
-      250,
-      150
-    ],
-    "offset": [
-      50,
-      0
-    ],
-    "anchor_from": "bottom_middle",
-    "anchor_to": "bottom_middle",
-    "layer": 25,
-    "controls": [
-      {
-        "@menu.board": {}
-      },
-      {
-        "@menu.sp1": {}
-      },
-      {
-        "@menu.sp2": {}
-      },
-      {
-        "@menu.sp3": {}
-      },
-      {
-        "@menu.sp4": {}
-      },
-      {
-        "@menu.sp5": {}
-      }
-    ]
-  },
-  //叠面板
-  //1
-  "sp1@common.scrolling_panel": {
-    "$show_background": false,
-    // 显示背景
-    "$scrolling_content": "menu.sl1",
-    // 滚动面板内容
-    "size": [
-      "100%",
-      "100%"
-    ]
-    // 滚动面板大小
-  },
-  "sl1": {
-    "type": "stack_panel",
-    "size": [
-      "100%",
-      1000
-    ],
-    "controls": [
-      {
-        "label_1": {
-          "type": "label",
-          "size": [
-            "100%",
-            10
-          ],
-          "text": "philia360UI\n一款昔涟主题UI"
-        }
-      },
-      {
-        "label_2": {
-          "type": "label",
-          "size": [
-            "100%",
-            "100%"
-          ],
-          "text": "贡献名单（排名不分先后）\nUI基于betmc动态背景制作\n1.hlirqiUI代码制作2.海绵太清提供云盘3.sukabing提供设计思路及仓库4.寻提供部分贴图和设计思路5.小宇SHIJIE美术和游戏内功能实现6.时肆提供情绪价值"
-        }
-      }
-    ],
-    "bindings": [
-      {
-        "binding_type": "view",
-        "source_control_name": "name_0",
-        "source_property_name": "#toggle_state",
-        "target_property_name": "#visible"
-      }
-    ]
-  },
-  //2
-  "sp2@common.scrolling_panel": {
-    "$show_background": false,
-    // 显示背景
-    "$scrolling_content": "menu.sl2",
-    // 滚动面板内容
-    "size": [
-      "100%",
-      "100%"
-    ]
-    // 滚动面板大小
-  },
-  "sl2": {
-    "type": "stack_panel",
-    "size": [
-      "100%",
-      1000
-    ],
-    "controls": [
-      {
-        "label_1": {
-          "type": "label",
-          "size": [
-            "100%",
-            "80%"
-          ],
-          "text": "§bphilia360UI为“昔涟”主题资源包。该材质包对主界面与游戏内部进行了全面优化。\n主界面将§a启用精简布局，提供一键动态背景、透明化按键§b等自定义功能。游戏内则§a新增了“昔涟”主题天空、武器工具、3D图腾及音效，并辅以容器背景与实用功能§b，旨在为您带来更具沉浸感与个性化的视觉及操作体验。\n\n§c宇宙级免责声明:\n1.由于该ui为第一次制作 大多为解包学习 所以内容会可能有相似现象 如有§a雷同§a纯属雷同\n2.如果动态背景侵犯了你的权益，请及时和我们联系，联系方式:\nhlirqi@126.com\n3.癫痫患者请在医生指导下食用\n4.本UI为免费项目，如果发现有人倒卖，请与我们联系\n5.本UI刚开始制作，如有bug，请见谅，并告知开发者"
-        }
-      },
-      {
-        "label_2": {
-          "type": "label",
-          "text": "hello world"
-        }
-      }
-    ],
-    "bindings": [
-      {
-        "binding_type": "view",
-        "source_control_name": "name_1",
-        "source_property_name": "#toggle_state",
-        "target_property_name": "#visible"
-      }
-    ]
-  },
-  //3
-  "sp3@common.scrolling_panel": {
-    "$show_background": false,
-    // 显示背景
-    "$scrolling_content": "menu.sl3",
-    // 滚动面板内容
-    "size": [
-      "100%",
-      "100%"
-    ]
-    // 滚动面板大小
-  },
-  "sl3": {
-    "type": "stack_panel",
-    "size": [
-      "100%",
-      1000
-    ],
-    "controls": [
-      {
-        "label_1": {
-          "type": "label",
-          "size": [
-            "100%",
-            "100%"
-          ],
-          "text": "§0更新日志\nv1.0.0:修改了主界面，加载游戏，设置界面的背景\n\nv1.0.1：-动态背景\n-主界面设置背景\n-3D图腾\n\nv1.0.2：-主界面控件移至右下方\n-控件淡粉色背景图\n-音乐播放功能（因为懒，所以 12 345 67是三首歌）\n-移除我的世界大标题\n\nv1.0.3：-更换更优质更高清的背景\n-在主界面按任意处可开始游戏\n-修改史蒂夫头颅为昔涟皮肤头颅\n\nv1.0.4:-增加全新界面——menu（左上箭头打开）\n-在menu中添加关于UI，公告，更新日志，关于过去的一封信\n-更改menu中开关贴图"
-        }
-      }
-    ],
-    "bindings": [
-      {
-        "binding_type": "view",
-        "source_control_name": "name_2",
-        "source_property_name": "#toggle_state",
-        "target_property_name": "#visible"
-      }
-    ]
-  },
-  //4
-  "sp4@common.scrolling_panel": {
-    "$show_background": false,
-    // 显示背景
-    "$scrolling_content": "menu.sl4",
-    // 滚动面板内容
-    "size": [
-      "100%",
-      "100%"
-    ]
-    // 滚动面板大小
-  },
-  "sl4": {
-    "type": "stack_panel",
-    "size": [
-      "100%",
-      1000
-    ],
-    "controls": [
-      {
-        "label_1": {
-          "type": "label",
-          "text": "§0请输入文本4"
-        }
-      },
-      {
-        "label_2": {
-          "type": "label",
-          "text": "hello world"
-        }
-      }
-    ],
-    "bindings": [
-      {
-        "binding_type": "view",
-        "source_control_name": "name_3",
-        "source_property_name": "#toggle_state",
-        "target_property_name": "#visible"
-      }
-    ]
-  },
-  //5
-  "sp5@common.scrolling_panel": {
-    "$show_background": false,
-    // 显示背景
-    "$scrolling_content": "menu.sl5",
-    // 滚动面板内容
-    "size": [
-      "100%",
-      "100%"
-    ]
-    // 滚动面板大小
-  },
-  "sl5": {
-    "type": "stack_panel",
-    "size": [
-      "100%",
-      1000
-    ],
-    "controls": [
-      {
-        "label_1": {
-          "type": "label",
-          "size": [
-            "100%",
-            "100%"
-          ],
-          "text": "§8开拓者：\n\n嗨，我想你啦。会不会有些突然呢？我只是，想再回头看一眼。\n\n开拓的旅程一定充满未知吧。所以，我也想在你的生命中再留下一份惊喜，一道记忆的涟漪，还有…妖精的小小魔法。\n\n不知不觉中，我们一起走过了好长的路呀。旅途的下一站，你又会写下怎样的故事呢？我会在你的回忆里期待着，只要闭上眼睛，就能看见你的眼睛，里面装着整个宇宙……\n\n就像清风吹拂的麦浪，就像群星闪耀的明天♪\n\n                                                    §o§d昔涟"
-        }
-      }
-    ],
-    "bindings": [
-      {
-        "binding_type": "view",
-        "source_control_name": "name_4",
-        "source_property_name": "#toggle_state",
-        "target_property_name": "#visible"
-      }
-    ]
-  },
-  "achievements@main_button": {
-    "anchor_from": "bottom_right",
-    "anchor_to": "bottom_right",
-    "offset": [
-      -120,
-      0
-    ],
-    "$border_visible": false,
-    "size": [
-      60,
-      15
-    ],
-    "layer": 10,
-    "$button_image": "start.icon8",
-    "$button_image_fill": true,
-    "$pressed_button_name": "button.menu_achievements",
-    "$button_text": "§0成就"
-  },
-  "fs": {}
-}
+  
+//—!—面板文字配置
+"wz1":{
+"type":"panel",
+"size": [250,150],
+"offset":[50,0],
+"anchor_from": "bottom_middle",
+"anchor_to": "bottom_middle",
+"layer":25,
+"controls":[
+{"@menu.board":{}},
+{"@menu.sp1":{}},
+{"@menu.sp2":{}},
+{"@menu.sp3":{}},
+{"@menu.sp4":{}},
+{"@menu.sp5":{}}
+]},
+//叠面板
+//1
+"sp1@common.scrolling_panel": {
+  "$show_background": false,// 显示背景
+  "$scrolling_content": "menu.sl1",// 滚动面板内容
+  "size": ["100%","100%"]// 滚动面板大小
+},
+"sl1": {
+  "type": "stack_panel",
+  "size": ["100%",1000],
+  "controls": [
+    {"label_1":{"type":"label","size":["100%",10],"text":"philia360UI\n一款昔涟主题UI"}},
+    {"label_2":{"type":"label","size":["100%","100%"],"text":"贡献名单（排名不分先后）\nUI基于betmc动态背景制作\n1.hlirqiUI代码制作2.海绵太清提供云盘3.sukabing提供设计思路及仓库4.寻提供部分贴图和设计思路5.小宇SHIJIE美术和游戏内功能实现6.时肆提供情绪价值"}}
+  ],
+     "bindings": [
+    {
+      "binding_type": "view",
+      "source_control_name": "name_0",
+      "source_property_name": "#toggle_state",
+      "target_property_name": "#visible"
+    }
+  ]
+},
+//2
+"sp2@common.scrolling_panel": {
+  "$show_background": false,// 显示背景
+  "$scrolling_content": "menu.sl2",// 滚动面板内容
+  "size": ["100%","100%"]// 滚动面板大小
+},
+"sl2": {
+  "type": "stack_panel",
+  "size": ["100%",1000],
+  "controls": [
+    {"label_1":{"type":"label","size": ["100%","80%"],"text":"§bphilia360UI为“昔涟”主题资源包。该材质包对主界面与游戏内部进行了全面优化。\n主界面将§a启用精简布局，提供一键动态背景、透明化按键§b等自定义功能。游戏内则§a新增了“昔涟”主题天空、武器工具、3D图腾及音效，并辅以容器背景与实用功能§b，旨在为您带来更具沉浸感与个性化的视觉及操作体验。\n\n§0宇宙级免责声明:\n1.由于该ui为第一次制作 大多为解包学习 所以内容会可能有相似现象 如有§a雷同§a纯属雷同\n§02.如果动态背景侵犯了你的权益，请及时和我们联系，联系方式:\nhlirqi@126.com\n3.癫痫患者请在医生指导下食用\n4.本UI为免费项目，如果发现有人倒卖，请与我们联系\n5.本UI刚开始制作，如有bug，请见谅，并告知开发者"}},
+    {"label_2":{"type":"label","text":"hello world"}}
+  ],
+     "bindings": [
+    {
+      "binding_type": "view",
+      "source_control_name": "name_1",
+      "source_property_name": "#toggle_state",
+      "target_property_name": "#visible"
+    }
+  ]
+},
+//3
+"sp3@common.scrolling_panel": {
+  "$show_background": false,// 显示背景
+  "$scrolling_content": "menu.sl3",// 滚动面板内容
+  "size": ["100%","100%"]// 滚动面板大小
+},
+"sl3": {
+  "type": "stack_panel",
+  "size": ["100%",1000],
+  "controls": [
+    {"label_1":{"type":"label","size": ["100%","100%"],"text":"§0更新日志\nv1.0.0:修改了主界面，加载游戏，设置界面的背景\n\nv1.0.1：动态背景\n-主界面设置背景\n-3D图腾\n\nv1.0.2：主界面控件移至右下方\n-控件淡粉色背景图\n-音乐播放功能（因为懒，所以 12 345 67是三首歌）\n-移除我的世界大标题\n\nv1.0.3：更换更优质更高清的背景\n-在主界面按任意处可开始游戏\n-修改史蒂夫头颅为昔涟皮肤头颅\n\nv1.0.4:增加全新界面——menu（左上箭头打开）\n-在menu中添加关于UI，公告，更新日志，关于过去的一封信\n-更改menu中开关贴图\n\nv1.0.5:更新面板内一键清屏\n-更换中文字体\n-替换全景图\n-替换天空\n-添加一键移动 一键丢弃等功能\n-增添个人信息显示\n-增添个人信息旁开关 控制成就 信息 面板 登陆等功能\n-更改面板进入方式"}}
+  ],
+     "bindings": [
+    {
+      "binding_type": "view",
+      "source_control_name": "name_2",
+      "source_property_name": "#toggle_state",
+      "target_property_name": "#visible"
+    }
+  ]
+},
+//4
+"sp4@common.scrolling_panel": {
+  "$show_background": false,// 显示背景
+  "$scrolling_content": "menu.sl4",// 滚动面板内容
+  "size": ["100%","100%"]// 滚动面板大小
+},
+"sl4": {
+  "type": "stack_panel",
+  "size": ["100%",1000],
+  "controls": [
+    {"label_1":{"type":"label","text":"§0请输入文本4"}},
+    {"label_2":{"type":"label","text":"hello world"}}
+  ],
+     "bindings": [
+    {
+      "binding_type": "view",
+      "source_control_name": "name_3",
+      "source_property_name": "#toggle_state",
+      "target_property_name": "#visible"
+    }
+  ]
+},
+//5
+"sp5@common.scrolling_panel": {
+  "$show_background": false,// 显示背景
+  "$scrolling_content": "menu.sl5",// 滚动面板内容
+  "size": ["100%","100%"]// 滚动面板大小
+},
+"sl5": {
+  "type": "stack_panel",
+  "size": ["100%",1000],
+  "controls": [
+    {"label_1":{"type":"label","size":["100%","100%"],"text":"§8开拓者：\n\n嗨，我想你啦。会不会有些突然呢？我只是，想再回头看一眼。\n\n开拓的旅程一定充满未知吧。所以，我也想在你的生命中再留下一份惊喜，一道记忆的涟漪，还有…妖精的小小魔法。\n\n不知不觉中，我们一起走过了好长的路呀。旅途的下一站，你又会写下怎样的故事呢？我会在你的回忆里期待着，只要闭上眼睛，就能看见你的眼睛，里面装着整个宇宙……\n\n就像清风吹拂的麦浪，就像群星闪耀的明天♪\n\n                                                    §o§d昔涟"
+  }
+  }
+  ],
+     "bindings": [
+    {
+      "binding_type": "view",
+      "source_control_name": "name_4",
+      "source_property_name": "#toggle_state",
+      "target_property_name": "#visible"
+    }
+  ]
+},
+"achievements@main_button":{
+"anchor_from":"bottom_right",
+"anchor_to":"bottom_right",
+"offset":[-120,0],
+"$border_visible":false,
+"size":[60,15],
+"layer":10,
+"$button_image":"start.icon8",
+"$button_image_fill":true,
+"$pressed_button_name":"button.menu_achievements",
+"$button_text":"§0成就"},
+  
+"fs":{}}

@@ -1,0 +1,12 @@
+{
+    "beacon_panel": {
+        "$ql_offset": [
+            171,
+            -28.5
+        ],
+        "$ql_border_size": [
+            0,
+            0
+        ]
+    }
+}

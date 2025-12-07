@@ -1,0 +1,364 @@
+{
+    "crafting_arrow": {
+        "controls": [
+            {
+                "quick_crafting@common_buttons.light_glyph_button": {
+                    "$button_content": "crafting.arrow_icon",
+                    "$focus_border_size": [
+                        0,
+                        0
+                    ],
+                    "button_mappings": [
+                        {
+                            "from_button_id": "button.menu_select",
+                            "mapping_type": "pressed",
+                            "to_button_id": "button.crafting_output_tertiary"
+                        }
+                    ],
+                    "layer": 3,
+                    "property_bag": {
+                        "#collection_index": 0,
+                        "#collection_name": "crafting_output_items"
+                    },
+                    "size": [
+                        18,
+                        15
+                    ]
+                }
+            }
+        ],
+        "texture": "textures/ui/none"
+    },
+    "crafting_arrow_large": {
+        "controls": [
+            {
+                "quick_crafting@common_buttons.light_glyph_button": {
+                    "button_mappings": [
+                        {
+                            "from_button_id": "button.menu_select",
+                            "mapping_type": "pressed",
+                            "to_button_id": "button.crafting_output_tertiary"
+                        }
+                    ],
+                    "layer": 5,
+                    "property_bag": {
+                        "#collection_index": 0,
+                        "#collection_name": "crafting_output_items"
+                    },
+                    "size": [
+                        24,
+                        18
+                    ],
+                    "$focus_border_size": [
+                        0,
+                        0
+                    ],
+                    "$button_content": "crafting.arrow_large_icon"
+                }
+            }
+        ],
+        "texture": "textures/ui/none"
+    },
+    "arrow_icon": {
+        "type": "image",
+        "texture": "textures/ui/arrow"
+    },
+    "arrow_large_icon": {
+        "type": "image",
+        "texture": "textures/ui/arrow_large"
+    },
+    "toolbar_panel/toolbar_background/toolbar_stack_panel/help_button_panel/help_button": {
+        "ignored": true
+    },
+    "player_inventory/hotbar_grid": {
+        "controls": [
+            {
+                "quick_loot_bg@common.ql_bg": {}
+            },
+            {
+                "dst@common.destroy_item_panel": {
+                    "bindings": [
+                        {
+                            "binding_type": "global",
+                            "binding_name": "#is_creative_mode",
+                            "binding_name_override": "#visible"
+                        }
+                    ]
+                }
+            },
+            {
+                "hotbar_grid_template": {
+                    "type": "grid",
+                    "size": [
+                        162,
+                        18
+                    ],
+                    "grid_dimensions": [
+                        9,
+                        1
+                    ],
+                    "grid_item_template": "common.grid_item_for_hotbar",
+                    "collection_name": "hotbar_items"
+                }
+            }
+        ]
+    },
+    "tab_navigation_panel_layout": {
+        "controls": [
+            {
+                "navigation_tabs": {
+                    "type": "panel",
+                    "size": [
+                        "fill",
+                        "100%"
+                    ],
+                    "controls": [
+                        {
+                            "content": {
+                                "type": "stack_panel",
+                                "orientation": "vertical",
+                                "size": [
+                                    "100%",
+                                    "100% + 4px"
+                                ],
+                                "anchor_to": "top_left",
+                                "anchor_from": "top_left",
+                                "controls": [
+                                    {
+                                        "construction_tab_panel": {
+                                            "type": "panel",
+                                            "size": [
+                                                35,
+                                                "100%"
+                                            ],
+                                            "$is_left_most_tab": true,
+                                            "controls": [
+                                                {
+                                                    "construction_tab_factory": {
+                                                        "type": "factory",
+                                                        "control_ids": {
+                                                            "construction_tab": "@crafting.construction_tab"
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "pddf": {
+                                            "type": "panel",
+                                            "size": [
+                                                4,
+                                                2
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "equipment_tab_panel": {
+                                            "type": "panel",
+                                            "size": [
+                                                35,
+                                                "100%"
+                                            ],
+                                            "controls": [
+                                                {
+                                                    "equipment_tab_factory": {
+                                                        "type": "factory",
+                                                        "control_ids": {
+                                                            "equipment_tab": "@crafting.equipment_tab"
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "pddf0": {
+                                            "type": "panel",
+                                            "size": [
+                                                4,
+                                                2
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "items_tab_panel": {
+                                            "type": "panel",
+                                            "size": [
+                                                35,
+                                                "100%"
+                                            ],
+                                            "controls": [
+                                                {
+                                                    "items_tab_factory": {
+                                                        "type": "factory",
+                                                        "control_ids": {
+                                                            "items_tab": "@crafting.items_tab"
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "pddf1": {
+                                            "type": "panel",
+                                            "size": [
+                                                4,
+                                                2
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "nature_tab_panel": {
+                                            "type": "panel",
+                                            "size": [
+                                                35,
+                                                "100%"
+                                            ],
+                                            "controls": [
+                                                {
+                                                    "nature_tab_factory": {
+                                                        "type": "factory",
+                                                        "control_ids": {
+                                                            "nature_tab": "@crafting.nature_tab"
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "pddf2": {
+                                            "type": "panel",
+                                            "size": [
+                                                4,
+                                                25
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "search_tab_holder": {
+                                            "type": "panel",
+                                            "size": [
+                                                35,
+                                                "100%"
+                                            ],
+                                            "controls": [
+                                                {
+                                                    "search_tab_end_creative@crafting.search_tab": {
+                                                        "$focus_override_right": "creative_layout_toggle",
+                                                        "bindings": [
+                                                            {
+                                                                "binding_type": "global",
+                                                                "binding_name": "#is_creative_and_recipe_book_layout",
+                                                                "binding_name_override": "#visible"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "search_tab_creative@crafting.search_tab": {
+                                                        "$is_right_most_tab": false,
+                                                        "$focus_override_right": "creative_layout_toggle",
+                                                        "bindings": [
+                                                            {
+                                                                "binding_type": "global",
+                                                                "binding_name": "#is_creative_and_creative_layout",
+                                                                "binding_name_override": "#visible"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "search_tab_survival@crafting.search_tab": {
+                                                        "$focus_override_right": "recipe_book_layout_toggle",
+                                                        "bindings": [
+                                                            {
+                                                                "binding_type": "global",
+                                                                "binding_name": "(not #is_creative_mode)",
+                                                                "binding_name_override": "#visible"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "top_tab": {
+        "variables": [
+            {
+                "requires": "($is_bottom_most_tab and not $is_top_most_tab)",
+                "$unchecked_default_image": "textures/ui/TabLeftBackBottomMost",
+                "$unchecked_hover_image": "textures/ui/TabLeftBackBottomMostHover",
+                "$unchecked_locked_image": "textures/ui/TabLeftBackBottomMost",
+                "$unchecked_locked_hover_image": "textures/ui/TabLeftBackBottomMost",
+                "$checked_default_image": "textures/ui/TabLeftFrontBottomMost",
+                "$checked_hover_image": "textures/ui/TabLeftFrontBottomMostHover",
+                "$checked_locked_image": "textures/ui/TabLeftFrontBottomMost",
+                "$checked_locked_hover_image": "textures/ui/TabLeftFrontBottomMost"
+            },
+            {
+                "requires": "($is_top_most_tab and not $is_bottom_most_tab)",
+                "$unchecked_default_image": "textures/ui/TabLeftBackTopMost",
+                "$unchecked_hover_image": "textures/ui/TabLeftBackTopMostHover",
+                "$unchecked_locked_image": "textures/ui/TabLeftBackTopMost",
+                "$unchecked_locked_hover_image": "textures/ui/TabLeftBackTopMost",
+                "$checked_default_image": "textures/ui/TabLeftFrontTopMost",
+                "$checked_hover_image": "textures/ui/TabLeftFrontTopMostHover",
+                "$checked_locked_image": "textures/ui/TabLeftFrontTopMost",
+                "$checked_locked_hover_image": "textures/ui/TabLeftFrontTopMost"
+            }
+        ],
+        "$unchecked_default_image": "textures/ui/TabLeftBack",
+        "$unchecked_hover_image": "textures/ui/TabLeftBackHover",
+        "$unchecked_locked_image": "textures/ui/TabLeftBack",
+        "$unchecked_locked_hover_image": "textures/ui/TabLeftBack",
+        "$checked_default_image|default": "textures/ui/TabLeftFront",
+        "$checked_hover_image|default": "textures/ui/TabLeftFrontHover",
+        "$checked_locked_image|default": "textures/ui/TabLeftFront",
+        "$checked_locked_hover_image|default": "textures/ui/TabLeftFront"
+    },
+    "construction_tab": {
+        "$unchecked_default_image": "textures/ui/TabLeftBackTopMost",
+        "$unchecked_hover_image": "textures/ui/TabLeftBackTopMostHover",
+        "$unchecked_locked_image": "textures/ui/TabLeftBackTopMost",
+        "$unchecked_locked_hover_image": "textures/ui/TabLeftBackTopMost",
+        "$checked_default_image": "textures/ui/TabLeftFrontTopMost",
+        "$checked_hover_image": "textures/ui/TabLeftFrontTopMostHover",
+        "$checked_locked_image": "textures/ui/TabLeftFrontTopMost",
+        "$checked_locked_hover_image": "textures/ui/TabLeftFrontTopMost"
+    },
+    "search_tab": {
+        "$unchecked_default_image": "textures/ui/TabLeftBackBottomMost",
+        "$unchecked_hover_image": "textures/ui/TabLeftBackBottomMostHover",
+        "$unchecked_locked_image": "textures/ui/TabLeftBackBottomMost",
+        "$unchecked_locked_hover_image": "textures/ui/TabLeftBackBottomMost",
+        "$checked_default_image": "textures/ui/TabLeftFrontBottomMost",
+        "$checked_hover_image": "textures/ui/TabLeftFrontBottomMostHover",
+        "$checked_locked_image": "textures/ui/TabLeftFrontBottomMost",
+        "$checked_locked_hover_image": "textures/ui/TabLeftFrontBottomMost"
+    },
+    "recipe_book/tab_navigation_panel": {
+        "anchor_from": "left_middle",
+        "anchor_to": "left_middle",
+        "offset": [
+            -30,
+            -71.5
+        ]
+    },
+    "recipe_book": {
+        "$ql_offset": [
+            3276732767,
+            3276732767
+        ]
+    }
+}
