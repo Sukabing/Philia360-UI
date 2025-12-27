@@ -1,0 +1,169 @@
+{
+  "namespace": "custom_skin_viewer",
+  
+  "skin_viewer_panel": {
+    "type": "input_panel",
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "size": [ "100%", "100%" ],
+    "offset": [ 0, -6 ],
+    "gesture_tracking_button": "button.turn_doll",
+    "tts_ignore_count": true,
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "button.turn_doll",
+        "mapping_type": "pressed",
+        "button_up_right_of_first_refusal": true
+      }
+    ],
+    "controls": [
+      {
+        "paper_doll_panel": {
+          "type": "panel",
+          "size": [ "100%", "100% - 10px" ],
+          "controls": [
+            {
+              "paper_doll": {
+                "type": "custom",
+                "renderer": "paper_doll_renderer",
+                "camera_tilt_degrees": 0,
+                "starting_rotation": -20,
+                "layer": 2,
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "rotation": "gesture_x",
+                "size": [ "100%", "100%" ],
+                "offset": [ 0, -15 ],
+                "animation_reset_name": "screen_animation_reset",
+                "anims": [
+                  "@common.screen_exit_size_animation_push",
+                  "@common.screen_exit_size_animation_pop",
+                  "@common.screen_entrance_size_animation_push",
+                  "@common.screen_entrance_size_animation_pop"
+                ],
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "viewer_panel",
+                    "source_property_name": "#gesture_delta_source",
+                    "target_property_name": "#gesture_delta_source"
+                  },
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "viewer_panel",
+                    "source_property_name": "#gesture_mouse_delta_x",
+                    "target_property_name": "#gesture_mouse_delta_x"
+                  },
+                  {
+                    "binding_name": "#is_appearance_visible",
+                    "binding_name_override": "#visible",
+                    "binding_condition": "always"
+                  }
+                ]
+              }
+            },
+            {
+              "appearacne_loading_panel@common_store.progress_loading": {
+                "$hide_failure_text": true,
+                "$hide_progress_loading_outline": true,
+                "$source_control_name": "paper_doll",
+                "$source_property_name": "(not #visible)"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  
+  "skin_viewer_button": {
+    "type": "button",
+    "size": [ 40, 40 ],
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "offset": [ -10, 10 ],
+    "texture": "textures/ui/profile_new_look.png",
+    "hover_texture": "textures/ui/profile_new_look.png",
+    "pressed_texture": "textures/ui/profile_new_look.png",
+    "layer": 30,
+    "bindings": [
+      {
+        "binding_type": "event",
+        "event_name": "click",
+        "target_control_name": "skin_viewer_popup",
+        "target_property_name": "#visible",
+        "target_property_value": "toggle"
+      }
+    ]
+  },
+  
+  "skin_viewer_popup": {
+    "type": "popup",
+    "size": [ 300, 400 ],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "layer": 100,
+    "visible": false,
+    "background": {
+      "type": "image",
+      "texture": "textures/ui/dialog_background_opaque.png",
+      "size": [ "100%", "100%" ]
+    },
+    "controls": [
+      {
+        "close_button": {
+          "type": "button",
+          "size": [ 20, 20 ],
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "offset": [ -5, 5 ],
+          "texture": "textures/ui/close_button_default.png",
+          "hover_texture": "textures/ui/close_button_hover.png",
+          "pressed_texture": "textures/ui/close_button_pressed.png",
+          "layer": 101,
+          "bindings": [
+            {
+              "binding_type": "event",
+              "event_name": "click",
+              "target_control_name": "skin_viewer_popup",
+              "target_property_name": "#visible",
+              "target_property_value": false
+            }
+          ]
+        }
+      },
+      {
+        "title_label": {
+          "type": "label",
+          "size": [ "100%", 30 ],
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "offset": [ 0, 5 ],
+          "text": "皮肤预览",
+          "font_type": "default",
+          "font_size": 18,
+          "text_alignment": "center",
+          "layer": 101
+        }
+      },
+      {
+        "viewer_container": {
+          "type": "panel",
+          "size": [ "100% - 20px", "100% - 50px" ],
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "offset": [ 0, 20 ],
+          "layer": 2,
+          "controls": [
+            {
+              "viewer_panel@custom_skin_viewer.skin_viewer_panel": {
+                "size": [ "100%", "100%" ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

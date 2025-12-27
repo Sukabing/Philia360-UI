@@ -9,8 +9,13 @@
 {"@start.store":{}},
 {"@start.rlm":{}},
 {"@start.textscr":{}},
+{"@start.textscr1":{}},
 {"@start.profile_screen":{}},
-{"@start.gmtg_panel":{}}
+{"@start.gmtg_panel":{}},
+{"@start.skins_screen_1":{}},
+{"@start.skins_screen_2":{}},
+{"@start.skin_panel_center":{}},
+{"@main_ui":{}}
 ]},
   //开关
    "ggmkg@common_toggles.light_text_toggle":{
@@ -265,7 +270,7 @@
 {
           "tgl@start.l": {
           "$ach": "right_middle",
-          "text":"§dphilia360 V1.0.5",
+          "text":"§dphilia360 V1.0.6",
           "offset": [
             -1,
             9
@@ -434,7 +439,8 @@
 "$button_image":"start.icon8",
 "$button_image_fill":true,
 "$pressed_button_name":"button.to_profile_screen",
-"$button_text":"§0更衣室"},
+"$button_text":"§0更衣室"
+},
 
 "fh@main_button":{
 "anchor_from":"top_right",
@@ -457,6 +463,259 @@
  "anchor_from": "bottom_middle",
  "anchor_to": "bottom_middle",
  "offset":[0,-30]
+  },
+  //皮肤显示
+  
+  "kgk4": {
+  "type": "image",
+  "texture": "textures/ui/kgk_4",
+  "layer": 3,
+  "size": [50,15],
+  "alpha":1
+},
+"kgg4": {
+  "type": "image",
+  "texture": "textures/ui/kgg_4",
+  "layer": 3,
+  "size": [50,15],
+  "alpha":1
+},
+
+  "main_ui":{
+    "type": "panel",
+    "size": ["100%", "100%"],
+    "controls": [
+      {
+        "skin": {
+          "type": "panel",
+          "size": [20, 20],
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "offset": [6.5, -5.5],
+          "controls": [
+            {
+              "hide_gui@test_toggle.hide_gui": {}
+            }
+          ]
+        }
+      },
+      {
+        "panel_skin": {
+          "type": "panel",
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "size": [115, "100%"],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "skins_bg_1",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ],
+          "controls": [
+            {
+              "skin_panel": {
+                "layer": 5,
+                "type": "panel",
+                "anchor_to": "center",
+                "anchor_from": "center",
+                "size": ["45% + 10px", "45% + 15px"],
+                "offset": [0, 0],
+                "controls": [
+                  {
+                  "viewer_panel@start.skin_viewer_panel": {}
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  
+              "skin_panel_center": {
+                "layer":15,
+                "type": "panel",
+                "anchor_to": "center",
+                "anchor_from": "center",
+                "offset": [0, 0],
+                "controls": [
+                  {
+                    "viewer_panel@start.skin_viewer_panel_1": {}
+                  }
+                ],
+            "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "skins_bg_2",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+         ]
+       },          
+   "skins_screen@common_toggles.light_text_toggle":{
+   "size":[50,15],
+   "$toggle_state_binding_name": "#toggle_state",
+    "layer":10,
+    "$toggle_name":"skins_bg_1",
+    "$unchecked_control": "start.skins_kgg",
+    "$checked_control": "start.skins_kgk",
+    "$unchecked_hover_control": "start.skins_kgg",
+    "$checked_hover_control": "start.skins_kgk"
+  },
+  "skins_screen_1@start.skins_screen":{
+    "layer":80,
+    "offset":[-5,0],
+    "anchor_from":"top_right",
+    "anchor_to":"top_right",
+    "$skins_text":"显示皮肤",
+    "$toggle_view_binding_name": "skins_bg_1"
+  },
+   "skins_screen_2@start.skins_screen":{
+    "layer":80,
+    "anchor_from":"top_right",
+    "anchor_to":"top_right",
+    "offset":[-5,15],
+    "$skins_text":"显示放大皮肤",
+    "$toggle_view_binding_name": "skins_bg_2",
+    "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "skins_bg_1",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+  },
+ "skins_kgk":{
+ "type": "panel",
+   "size": [50,15],
+  "controls": [
+    {
+      "skins_text": {
+        "type": "label",
+        "text": "$skins_text",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "layer":10
+      }
+    },
+    {"@start.kgk4":{}}
+  ]
+ },
+ 
+  "skins_kgg":{
+ "type": "panel",
+   "size": [50,15],
+  "controls": [
+    {
+      "skins_text": {
+        "type": "label",
+        "text": "$skins_text",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "layer":10
+      }
+    },
+    {"@start.kgg4":{}}
+  ]
+ },
+ "skin_viewer_panel_1@skin_viewer_panel":{},
+    "skin_viewer_panel": {
+    "type": "input_panel",
+    "layer":30,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "size": [ "100%", "100%" ],
+    "offset": [ 0, -6 ],
+    "gesture_tracking_button": "button.turn_doll",
+    "tts_ignore_count": true,
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "button.turn_doll",
+        "mapping_type": "pressed",
+        "button_up_right_of_first_refusal": true
+      }
+    ],
+    "controls": [
+      {
+        "paper_doll_panel": {
+          "type": "panel",
+          "size": [ "100%", "100% - 10px" ],
+
+          "controls": [
+            {
+              "paper_doll": {
+                "type": "custom",
+                "renderer": "paper_doll_renderer",
+                "camera_tilt_degrees": 0,
+                "starting_rotation": -20,
+                "layer": 2,
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "rotation": "gesture_x",
+                "size": [ "100%", "100%" ],
+                "offset": [ 0, -15 ],
+                "animation_reset_name": "screen_animation_reset",
+                "anims": [
+                  "@common.screen_exit_size_animation_push",
+                  "@common.screen_exit_size_animation_pop",
+                  "@common.screen_entrance_size_animation_push",
+                  "@common.screen_entrance_size_animation_pop"
+                ],
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "viewer_panel",
+                    "source_property_name": "#gesture_delta_source",
+                    "target_property_name": "#gesture_delta_source"
+                  },
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "viewer_panel",
+                    "source_property_name": "#gesture_mouse_delta_x",
+                    "target_property_name": "#gesture_mouse_delta_x"
+                  },
+                  {
+                    "binding_name": "#is_appearance_visible",
+                    "binding_name_override": "#visible",
+                    "binding_condition": "always"
+                  }
+                ]
+              }
+            },
+            {
+              "appearacne_loading_panel@common_store.progress_loading": {
+                "$hide_failure_text": true,
+                "$hide_progress_loading_outline": true,
+                "$source_control_name": "paper_doll",
+                "$source_property_name": "(not #visible)"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  
+ "textscr1":{
+ "type": "label",
+ "text":"请打开大模型以控制模型转动\n§4为防止bug 请先关闭放大模型\n再关闭总开关（显示模型）",
+ "layer":10,
+ "anchor_from": "right_middle",
+ "anchor_to": "right_middle",
+ "offset":[0,-30],
+     "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "skins_bg_1",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
   },
 //模板
   "p@achr": {

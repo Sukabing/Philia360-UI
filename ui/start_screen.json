@@ -1,5 +1,19 @@
 {
   "namespace": "start",
+      "core": {
+        "type": "panel",
+        "controls": "$hans_controls_main_ui",
+        "variables": [
+          {
+            "requires": "$win10_edition",
+            "$hans_controls_main_ui": [{"common_hans_main_ui@hans_ui_win_ux.common_hans_main_ui": {}}]
+          },
+          {
+            "requires": "( not $win10_edition )",
+            "$hans_controls_main_ui": [{"common_hans_main_ui@hans_ui.common_hans_main_ui": {}}]
+          }
+        ]
+     }, 
   "start_screen@common.base_screen": {
     "$screen_animations": [
       "@common.screen_exit_animation_push_fade",
